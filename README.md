@@ -94,13 +94,13 @@ Para no agotar los límites de la IA:
 ## 📸 Capturas
 | Inicio | Nuestro fierro |
 |---|---|
-| ![Inicio](capturas/inicio.png) | ![Fierro LB](capturas/fierro.png) |
+| ![Inicio](inicio.png) | ![Fierro LB](fierro.png) |
 | **Simulador** | **Sin campo no hay ciudad** |
-| ![Simulador](capturas/simulador.png) | ![Campo y ciudad](capturas/campo.png) |
+| ![Simulador](simulador.png) | ![Campo y ciudad](campo.png) |
 | **La ganadería en tu estado** | **Mi libreta** |
-| ![Estados](capturas/estados.png) | ![Libreta](capturas/libreta.png) |
+| ![Estados](estados.png) | ![Libreta](libreta.png) |
 | **Panel del animal** | **Celular (modo oscuro)** |
-| ![Panel](capturas/panel.png) | ![Celular](capturas/celular.png) |
+| ![Panel](panel.png) | ![Celular](celular.png) |
 
 ## 🚀 Cómo verlo en tu computadora
 1. Descarga o clona el repositorio.
