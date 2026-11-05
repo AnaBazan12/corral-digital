@@ -1,8 +1,10 @@
 # 🐄 Corral Digital
 > La libreta de tu rancho, ahora en tu celular. **Sin campo, no hay ciudad.**
 
-🔗 **Sitio publicado:** https://TU-USUARIO.github.io/corral-digital/
-📦 **Repositorio:** https://github.com/TU-USUARIO/corral-digital
+
+🔗 **Sitio publicado:** https://AnaBazan12.github.io/corral-digital/
+📦 **Repositorio:** https://github.com/AnaBazan12/corral-digital
+
 
 ---
 
