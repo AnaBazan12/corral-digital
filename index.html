@@ -1,0 +1,1939 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corral Digital — La libreta de tu rancho, ahora en tu celular</title>
+  <meta name="description" content="Corral Digital: lleva el control de tu ganado, partos, engorda, pesos y cuentas desde el celular. Hecho en Michoacán.">
+  <meta name="theme-color" content="#1E1712">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2048%2048%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23FFE3A3%22/%3E%3Cstop%20offset%3D%22.45%22%20stop-color%3D%22%23F59E0B%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23C2410C%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D%2248%22%20height%3D%2248%22%20rx%3D%2214%22%20fill%3D%22%231E1712%22/%3E%3Cg%20fill%3D%22url%28%23g%29%22%20stroke%3D%22url%28%23g%29%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M12%2012%20V37.5%20H36%22%20stroke-width%3D%223.3%22/%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M12%2012%20c0%20-3.4%20-3.6%20-4.6%20-5.6%20-2%22%20stroke-width%3D%222.6%22/%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M36%2037.5%20c3.2%200%204.4%20-3.6%202%20-5.6%22%20stroke-width%3D%222.6%22/%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M21%2011.5%20V33%20M21%2011.5%20H28.3%20a5%205%200%200%201%200%2010.2%20H21%20M21%2021.7%20H29.4%20a5.65%205.65%200%200%201%200%2011.3%20H21%22%20stroke-width%3D%223%22/%3E%3Ccircle%20cx%3D%226.4%22%20cy%3D%2210%22%20r%3D%221.6%22%20stroke%3D%22none%22/%3E%3Ccircle%20cx%3D%2238%22%20cy%3D%2231.9%22%20r%3D%221.6%22%20stroke%3D%22none%22/%3E%3C/g%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    try {
+      const tema = localStorage.getItem('cd_tema');
+      if (tema === 'oscuro' || (!tema && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      }
+    } catch (e) {}
+  </script>
+
+  <!-- Estilos de Tailwind CSS ya compilados (sin CDN, carga más rápido) -->
+  <style>*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:Plus Jakarta Sans,system-ui,sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.input{width:100%;border-radius:1rem;border-width:1px;border-color:rgba(94,67,49,.2);--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1));padding:.875rem 1rem;font-size:1rem;line-height:1.5rem;--tw-text-opacity:1;color:rgb(19 26 23/var(--tw-text-opacity,1));transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.3s}.input::-moz-placeholder{color:rgba(94,67,49,.4)}.input::placeholder{color:rgba(94,67,49,.4)}.input:focus{--tw-border-opacity:1;border-color:rgb(31 61 51/var(--tw-border-opacity,1));outline:2px solid transparent;outline-offset:2px;--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);--tw-ring-color:rgba(114,168,98,.3)}.input:is(.dark *){border-color:hsla(0,0%,100%,.1);--tw-bg-opacity:1;background-color:rgb(19 26 23/var(--tw-bg-opacity,1));--tw-text-opacity:1;color:rgb(250 246 240/var(--tw-text-opacity,1))}.input:is(.dark *)::-moz-placeholder{color:hsla(36,50%,96%,.3)}.input:is(.dark *)::placeholder{color:hsla(36,50%,96%,.3)}.label{margin-bottom:.5rem;display:block;font-size:.875rem;line-height:1.25rem;font-weight:700;--tw-text-opacity:1;color:rgb(31 61 51/var(--tw-text-opacity,1))}.label:is(.dark *){--tw-text-opacity:1;color:rgb(114 168 98/var(--tw-text-opacity,1))}.card{border-radius:1.5rem;border-width:1px;border-color:rgba(94,67,49,.1);background-color:hsla(0,0%,100%,.9);--tw-shadow:0 1px 2px 0 rgba(0,0,0,.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.3s}.card,.card:hover{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.card:hover{--tw-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color),0 2px 4px -2px var(--tw-shadow-color)}.card:is(.dark *){border-color:hsla(0,0%,100%,.05);--tw-bg-opacity:1;background-color:rgb(27 36 32/var(--tw-bg-opacity,1))}.\!btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border-radius:1rem;padding:1rem 1.5rem;font-size:1rem;line-height:1.5rem;font-weight:700;transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.3s}.\!btn:focus{outline:2px solid transparent;outline-offset:2px}.\!btn:focus-visible{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);--tw-ring-color:rgba(114,168,98,.5)}.\!btn:active{--tw-scale-x:.98;--tw-scale-y:.98;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border-radius:1rem;padding:1rem 1.5rem;font-size:1rem;line-height:1.5rem;font-weight:700;transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.3s}.btn:focus{outline:2px solid transparent;outline-offset:2px}.btn:focus-visible{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);--tw-ring-color:rgba(114,168,98,.5)}.btn:active{--tw-scale-x:.98;--tw-scale-y:.98;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.btn-accion{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border-radius:1rem;padding:1rem 1.5rem;font-size:1rem;line-height:1.5rem;font-weight:700;transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.3s}.btn-accion:focus{outline:2px solid transparent;outline-offset:2px}.btn-accion:focus-visible{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);--tw-ring-color:rgba(114,168,98,.5)}.btn-accion:active{--tw-scale-x:.98;--tw-scale-y:.98;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.btn-accion{--tw-bg-opacity:1;background-color:rgb(230 126 34/var(--tw-bg-opacity,1));--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1));--tw-shadow:0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color),0 8px 10px -6px var(--tw-shadow-color);--tw-shadow-color:rgba(230,126,34,.25);--tw-shadow:var(--tw-shadow-colored)}.btn-accion,.btn-accion:hover{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.btn-accion:hover{--tw-translate-y:-0.25rem;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));--tw-bg-opacity:1;background-color:rgb(181 94 21/var(--tw-bg-opacity,1));--tw-shadow:0 25px 50px -12px rgba(0,0,0,.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);--tw-shadow-color:rgba(230,126,34,.35);--tw-shadow:var(--tw-shadow-colored)}.btn-verde{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border-radius:1rem;padding:1rem 1.5rem;font-size:1rem;line-height:1.5rem;font-weight:700;transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.3s}.btn-verde:focus{outline:2px solid transparent;outline-offset:2px}.btn-verde:focus-visible{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);--tw-ring-color:rgba(114,168,98,.5)}.btn-verde:active{--tw-scale-x:.98;--tw-scale-y:.98;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.btn-verde{--tw-bg-opacity:1;background-color:rgb(31 61 51/var(--tw-bg-opacity,1));--tw-text-opacity:1;color:rgb(250 246 240/var(--tw-text-opacity,1));--tw-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);--tw-shadow-color:rgba(31,61,51,.2);--tw-shadow:var(--tw-shadow-colored)}.btn-verde:hover{--tw-translate-y:-0.125rem;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));--tw-bg-opacity:1;background-color:rgb(22 44 36/var(--tw-bg-opacity,1))}.btn-verde:is(.dark *){--tw-bg-opacity:1;background-color:rgb(114 168 98/var(--tw-bg-opacity,1));--tw-text-opacity:1;color:rgb(19 26 23/var(--tw-text-opacity,1))}.btn-verde:hover:is(.dark *){--tw-bg-opacity:1;background-color:rgb(82 122 69/var(--tw-bg-opacity,1))}.btn-fantasma{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border-radius:1rem;padding:1rem 1.5rem;font-size:1rem;line-height:1.5rem;font-weight:700;transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.3s}.btn-fantasma:focus{outline:2px solid transparent;outline-offset:2px}.btn-fantasma:focus-visible{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);--tw-ring-color:rgba(114,168,98,.5)}.btn-fantasma:active{--tw-scale-x:.98;--tw-scale-y:.98;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.btn-fantasma{border-width:2px;border-color:rgba(31,61,51,.2);--tw-text-opacity:1;color:rgb(31 61 51/var(--tw-text-opacity,1))}.btn-fantasma:hover{--tw-translate-y:-0.125rem;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));--tw-border-opacity:1;border-color:rgb(31 61 51/var(--tw-border-opacity,1));background-color:rgba(31,61,51,.05)}.btn-fantasma:is(.dark *){border-color:hsla(36,50%,96%,.2);--tw-text-opacity:1;color:rgb(250 246 240/var(--tw-text-opacity,1))}.btn-fantasma:hover:is(.dark *){--tw-border-opacity:1;border-color:rgb(250 246 240/var(--tw-border-opacity,1))}.chip{display:inline-flex;align-items:center;gap:.375rem;padding:.25rem .875rem;font-size:.75rem;line-height:1rem;font-weight:700;letter-spacing:.025em}.chip,.filtro{border-radius:9999px;transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.3s}.filtro{border-width:1px;border-color:rgba(94,67,49,.15);padding:.5rem 1rem;font-size:.875rem;line-height:1.25rem;font-weight:600;--tw-text-opacity:1;color:rgb(94 67 49/var(--tw-text-opacity,1))}.filtro:hover{--tw-border-opacity:1;border-color:rgb(31 61 51/var(--tw-border-opacity,1))}.filtro:is(.dark *){border-color:hsla(0,0%,100%,.1);color:hsla(36,50%,96%,.8)}.filtro.activo{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));--tw-border-opacity:1;border-color:rgb(31 61 51/var(--tw-border-opacity,1));--tw-bg-opacity:1;background-color:rgb(31 61 51/var(--tw-bg-opacity,1));--tw-text-opacity:1;color:rgb(250 246 240/var(--tw-text-opacity,1));--tw-shadow:0 1px 2px 0 rgba(0,0,0,.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.filtro.activo:is(.dark *){--tw-border-opacity:1;border-color:rgb(114 168 98/var(--tw-border-opacity,1));--tw-bg-opacity:1;background-color:rgb(114 168 98/var(--tw-bg-opacity,1));--tw-text-opacity:1;color:rgb(19 26 23/var(--tw-text-opacity,1))}.tab-btn{flex:1 1 0%;border-radius:1rem;padding:.875rem 1rem;font-size:.875rem;line-height:1.25rem;font-weight:700;--tw-text-opacity:1;color:rgb(94 67 49/var(--tw-text-opacity,1));transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.3s}.tab-btn:is(.dark *){color:hsla(36,50%,96%,.7)}@media (min-width:640px){.tab-btn{font-size:1rem;line-height:1.5rem}}.tab-btn[aria-selected=true]{--tw-scale-x:1.02;--tw-scale-y:1.02;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1));--tw-text-opacity:1;color:rgb(31 61 51/var(--tw-text-opacity,1));--tw-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color),0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.tab-btn[aria-selected=true]:is(.dark *){--tw-bg-opacity:1;background-color:rgb(19 26 23/var(--tw-bg-opacity,1));--tw-text-opacity:1;color:rgb(114 168 98/var(--tw-text-opacity,1))}.eyebrow{margin-bottom:.75rem;display:inline-flex;align-items:center;gap:.5rem;border-radius:9999px;background-color:rgba(114,168,98,.15);padding:.375rem 1rem;font-size:.875rem;line-height:1.25rem;font-weight:700;--tw-text-opacity:1;color:rgb(31 61 51/var(--tw-text-opacity,1))}.eyebrow:is(.dark *){--tw-text-opacity:1;color:rgb(114 168 98/var(--tw-text-opacity,1))}.titulo{font-family:Fraunces,Georgia,serif;font-size:1.875rem;line-height:2.25rem;font-weight:800;line-height:1.25;letter-spacing:-.025em;--tw-text-opacity:1;color:rgb(31 61 51/var(--tw-text-opacity,1))}.titulo:is(.dark *){--tw-text-opacity:1;color:rgb(250 246 240/var(--tw-text-opacity,1))}@media (min-width:640px){.titulo{font-size:3rem;line-height:1}}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}.pointer-events-none{pointer-events:none}.pointer-events-auto{pointer-events:auto}.\!visible{visibility:visible!important}.visible{visibility:visible}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0}.inset-x-0{left:0;right:0}.inset-x-3{left:.75rem;right:.75rem}.-bottom-2{bottom:-.5rem}.-bottom-6{bottom:-1.5rem}.-left-20{left:-5rem}.-left-40{left:-10rem}.-left-6{left:-1.5rem}.-right-10{right:-2.5rem}.-right-20{right:-5rem}.-right-24{right:-6rem}.-right-32{right:-8rem}.-right-4{right:-1rem}.-top-10{top:-2.5rem}.-top-32{top:-8rem}.bottom-0{bottom:0}.bottom-20{bottom:5rem}.bottom-6{bottom:1.5rem}.bottom-\[8\%\]{bottom:8%}.left-0{left:0}.left-1\/2{left:50%}.left-4{left:1rem}.left-\[38\%\]{left:38%}.left-\[44\%\]{left:44%}.left-\[6\%\]{left:6%}.right-2{right:.5rem}.right-5{right:1.25rem}.right-\[10\%\]{right:10%}.right-\[42\%\]{right:42%}.right-\[8\%\]{right:8%}.top-0{top:0}.top-1\/2{top:50%}.top-10{top:2.5rem}.top-14{top:3.5rem}.top-2{top:.5rem}.top-20{top:5rem}.top-40{top:10rem}.top-5{top:1.25rem}.top-\[12\%\]{top:12%}.top-\[18\%\]{top:18%}.top-\[30\%\]{top:30%}.top-\[70\%\]{top:70%}.z-10{z-index:10}.z-20{z-index:20}.z-50{z-index:50}.z-\[55\]{z-index:55}.z-\[60\]{z-index:60}.order-1{order:1}.order-2{order:2}.col-span-2{grid-column:span 2/span 2}.col-span-full{grid-column:1/-1}.mx-4{margin-left:1rem;margin-right:1rem}.mx-auto{margin-left:auto;margin-right:auto}.mb-2{margin-bottom:.5rem}.mb-3{margin-bottom:.75rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.mt-0\.5{margin-top:.125rem}.mt-1{margin-top:.25rem}.mt-10{margin-top:2.5rem}.mt-12{margin-top:3rem}.mt-14{margin-top:3.5rem}.mt-16{margin-top:4rem}.mt-2{margin-top:.5rem}.mt-20{margin-top:5rem}.mt-3{margin-top:.75rem}.mt-4{margin-top:1rem}.mt-5{margin-top:1.25rem}.mt-6{margin-top:1.5rem}.mt-7{margin-top:1.75rem}.mt-8{margin-top:2rem}.mt-9{margin-top:2.25rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-1\.5{height:.375rem}.h-10{height:2.5rem}.h-11{height:2.75rem}.h-12{height:3rem}.h-14{height:3.5rem}.h-16{height:4rem}.h-2\.5{height:.625rem}.h-3{height:.75rem}.h-3\.5{height:.875rem}.h-40{height:10rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-72{height:18rem}.h-8{height:2rem}.h-80{height:20rem}.h-9{height:2.25rem}.h-96{height:24rem}.h-\[30rem\]{height:30rem}.h-\[455px\]{height:455px}.h-\[620px\]{height:620px}.h-full{height:100%}.max-h-44{max-height:11rem}.max-h-\[90vh\]{max-height:90vh}.min-h-\[130px\]{min-height:130px}.w-0{width:0}.w-10{width:2.5rem}.w-11{width:2.75rem}.w-12{width:3rem}.w-14{width:3.5rem}.w-16{width:4rem}.w-20{width:5rem}.w-24{width:6rem}.w-40{width:10rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-72{width:18rem}.w-8{width:2rem}.w-80{width:20rem}.w-9{width:2.25rem}.w-96{width:24rem}.w-\[30rem\]{width:30rem}.w-full{width:100%}.w-max{width:-moz-max-content;width:max-content}.min-w-0{min-width:0}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-4xl{max-width:56rem}.max-w-6xl{max-width:72rem}.max-w-7xl{max-width:80rem}.max-w-\[320px\]{max-width:320px}.max-w-\[520px\]{max-width:520px}.max-w-lg{max-width:32rem}.max-w-md{max-width:28rem}.max-w-sm{max-width:24rem}.max-w-xl{max-width:36rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.-translate-y-1\/2{--tw-translate-y:-50%}.-translate-y-1\/2,.rotate-\[-6deg\]{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.rotate-\[-6deg\]{--tw-rotate:-6deg}.rotate-\[5deg\]{--tw-rotate:5deg}.rotate-\[5deg\],.scale-105{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05}.scale-\[1\.02\]{--tw-scale-x:1.02;--tw-scale-y:1.02}.scale-\[1\.02\],.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(.4,0,.6,1) infinite}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;-moz-user-select:none;user-select:none}.resize-y{resize:vertical}.scroll-mt-20{scroll-margin-top:5rem}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.place-items-center{place-items:center}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.items-baseline{align-items:baseline}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:.25rem}.gap-1\.5{gap:.375rem}.gap-10{gap:2.5rem}.gap-12{gap:3rem}.gap-14{gap:3.5rem}.gap-2{gap:.5rem}.gap-2\.5{gap:.625rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-6{gap:1.5rem}.gap-7{gap:1.75rem}.gap-8{gap:2rem}.gap-x-8{-moz-column-gap:2rem;column-gap:2rem}.gap-y-3{row-gap:.75rem}.space-y-1\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.375rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.375rem*var(--tw-space-y-reverse))}.space-y-2>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.5rem*var(--tw-space-y-reverse))}.space-y-3>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.75rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.75rem*var(--tw-space-y-reverse))}.space-y-4>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem*var(--tw-space-y-reverse))}.space-y-5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem*var(--tw-space-y-reverse))}.space-y-8>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2rem*var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.scroll-smooth{scroll-behavior:smooth}.truncate{overflow:hidden;text-overflow:ellipsis}.truncate,.whitespace-nowrap{white-space:nowrap}.\!rounded-2xl{border-radius:1rem!important}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-\[2\.75rem\]{border-radius:2.75rem}.rounded-\[3rem\]{border-radius:3rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.rounded-xl{border-radius:.75rem}.rounded-t-lg{border-top-left-radius:.5rem;border-top-right-radius:.5rem}.border{border-width:1px}.border-2{border-width:2px}.border-\[10px\]{border-width:10px}.border-\[12px\]{border-width:12px}.border-b{border-bottom-width:1px}.border-l-2{border-left-width:2px}.border-t{border-top-width:1px}.border-dashed{border-style:dashed}.border-pradera{--tw-border-opacity:1;border-color:rgb(31 61 51/var(--tw-border-opacity,1))}.border-pradera-900{--tw-border-opacity:1;border-color:rgb(14 28 23/var(--tw-border-opacity,1))}.border-pradera\/20{border-color:rgba(31,61,51,.2)}.border-red-200{--tw-border-opacity:1;border-color:rgb(254 202 202/var(--tw-border-opacity,1))}.border-tierra\/10{border-color:rgba(94,67,49,.1)}.border-tierra\/15{border-color:rgba(94,67,49,.15)}.border-tierra\/20{border-color:rgba(94,67,49,.2)}.border-tierra\/25{border-color:rgba(94,67,49,.25)}.border-white\/10{border-color:hsla(0,0%,100%,.1)}.\!bg-white{--tw-bg-opacity:1!important;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))!important}.bg-\[\#1E1712\]{--tw-bg-opacity:1;background-color:rgb(30 23 18/var(--tw-bg-opacity,1))}.bg-atardecer{--tw-bg-opacity:1;background-color:rgb(230 126 34/var(--tw-bg-opacity,1))}.bg-atardecer\/10{background-color:rgba(230,126,34,.1)}.bg-atardecer\/15{background-color:rgba(230,126,34,.15)}.bg-atardecer\/20{background-color:rgba(230,126,34,.2)}.bg-atardecer\/25{background-color:rgba(230,126,34,.25)}.bg-black\/15{background-color:rgba(0,0,0,.15)}.bg-black\/60{background-color:rgba(0,0,0,.6)}.bg-brote{--tw-bg-opacity:1;background-color:rgb(114 168 98/var(--tw-bg-opacity,1))}.bg-brote\/15{background-color:rgba(114,168,98,.15)}.bg-brote\/20{background-color:rgba(114,168,98,.2)}.bg-brote\/25{background-color:rgba(114,168,98,.25)}.bg-brote\/30{background-color:rgba(114,168,98,.3)}.bg-brote\/60{background-color:rgba(114,168,98,.6)}.bg-brote\/70{background-color:rgba(114,168,98,.7)}.bg-brote\/85{background-color:rgba(114,168,98,.85)}.bg-pradera{--tw-bg-opacity:1;background-color:rgb(31 61 51/var(--tw-bg-opacity,1))}.bg-pradera-900{--tw-bg-opacity:1;background-color:rgb(14 28 23/var(--tw-bg-opacity,1))}.bg-pradera-900\/20{background-color:rgba(14,28,23,.2)}.bg-red-100{--tw-bg-opacity:1;background-color:rgb(254 226 226/var(--tw-bg-opacity,1))}.bg-red-50{--tw-bg-opacity:1;background-color:rgb(254 242 242/var(--tw-bg-opacity,1))}.bg-red-600{--tw-bg-opacity:1;background-color:rgb(220 38 38/var(--tw-bg-opacity,1))}.bg-sky-100{--tw-bg-opacity:1;background-color:rgb(224 242 254/var(--tw-bg-opacity,1))}.bg-sky-100\/70{background-color:rgba(224,242,254,.7)}.bg-tierra{--tw-bg-opacity:1;background-color:rgb(94 67 49/var(--tw-bg-opacity,1))}.bg-tierra\/10{background-color:rgba(94,67,49,.1)}.bg-tierra\/15{background-color:rgba(94,67,49,.15)}.bg-trigo{--tw-bg-opacity:1;background-color:rgb(250 246 240/var(--tw-bg-opacity,1))}.bg-trigo-200{--tw-bg-opacity:1;background-color:rgb(239 231 222/var(--tw-bg-opacity,1))}.bg-trigo-200\/50{background-color:hsla(32,35%,90%,.5)}.bg-trigo-200\/60{background-color:hsla(32,35%,90%,.6)}.bg-trigo-200\/70{background-color:hsla(32,35%,90%,.7)}.bg-trigo\/90{background-color:hsla(36,50%,96%,.9)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.bg-white\/10{background-color:hsla(0,0%,100%,.1)}.bg-white\/15{background-color:hsla(0,0%,100%,.15)}.bg-white\/20{background-color:hsla(0,0%,100%,.2)}.bg-white\/25{background-color:hsla(0,0%,100%,.25)}.bg-white\/5{background-color:hsla(0,0%,100%,.05)}.bg-white\/60{background-color:hsla(0,0%,100%,.6)}.bg-white\/80{background-color:hsla(0,0%,100%,.8)}.bg-white\/90{background-color:hsla(0,0%,100%,.9)}.bg-white\/95{background-color:hsla(0,0%,100%,.95)}.bg-gradient-to-br{background-image:linear-gradient(to bottom right,var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}.from-atardecer{--tw-gradient-from:#e67e22 var(--tw-gradient-from-position);--tw-gradient-to:rgba(230,126,34,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-brote{--tw-gradient-from:#72a862 var(--tw-gradient-from-position);--tw-gradient-to:rgba(114,168,98,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.to-atardecer{--tw-gradient-to:#e67e22 var(--tw-gradient-to-position)}.to-atardecer-700{--tw-gradient-to:#b55e15 var(--tw-gradient-to-position)}.bg-clip-text{-webkit-background-clip:text;background-clip:text}.p-12{padding:3rem}.p-2{padding:.5rem}.p-2\.5{padding:.625rem}.p-3{padding:.75rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.p-7{padding:1.75rem}.p-8{padding:2rem}.\!px-5{padding-left:1.25rem!important;padding-right:1.25rem!important}.\!py-2{padding-top:.5rem!important;padding-bottom:.5rem!important}.\!py-2\.5{padding-top:.625rem!important;padding-bottom:.625rem!important}.\!py-3{padding-top:.75rem!important;padding-bottom:.75rem!important}.px-2{padding-left:.5rem;padding-right:.5rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-3\.5{padding-left:.875rem;padding-right:.875rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-0\.5{padding-top:.125rem;padding-bottom:.125rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-14{padding-top:3.5rem;padding-bottom:3.5rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-24{padding-top:6rem;padding-bottom:6rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.py-3\.5{padding-top:.875rem;padding-bottom:.875rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-5{padding-top:1.25rem;padding-bottom:1.25rem}.\!pl-12{padding-left:3rem!important}.pb-24{padding-bottom:6rem}.pb-4{padding-bottom:1rem}.pl-5{padding-left:1.25rem}.pr-10{padding-right:2.5rem}.pr-12{padding-right:3rem}.pt-2{padding-top:.5rem}.pt-3{padding-top:.75rem}.pt-32{padding-top:8rem}.text-left{text-align:left}.text-center{text-align:center}.font-display{font-family:Fraunces,Georgia,serif}.font-sans{font-family:Plus Jakarta Sans,system-ui,sans-serif}.\!text-sm{font-size:.875rem!important;line-height:1.25rem!important}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-6xl{font-size:3.75rem;line-height:1}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-\[2\.7rem\]{font-size:2.7rem}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-\[1\.08\]{line-height:1.08}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-.025em}.tracking-wide{letter-spacing:.025em}.tracking-wider{letter-spacing:.05em}.\!text-atardecer-700{--tw-text-opacity:1!important;color:rgb(181 94 21/var(--tw-text-opacity,1))!important}.text-atardecer{--tw-text-opacity:1;color:rgb(230 126 34/var(--tw-text-opacity,1))}.text-atardecer-700{--tw-text-opacity:1;color:rgb(181 94 21/var(--tw-text-opacity,1))}.text-brote{--tw-text-opacity:1;color:rgb(114 168 98/var(--tw-text-opacity,1))}.text-brote-700{--tw-text-opacity:1;color:rgb(82 122 69/var(--tw-text-opacity,1))}.text-noche{--tw-text-opacity:1;color:rgb(19 26 23/var(--tw-text-opacity,1))}.text-pradera{--tw-text-opacity:1;color:rgb(31 61 51/var(--tw-text-opacity,1))}.text-pradera\/70{color:rgba(31,61,51,.7)}.text-red-600{--tw-text-opacity:1;color:rgb(220 38 38/var(--tw-text-opacity,1))}.text-red-700{--tw-text-opacity:1;color:rgb(185 28 28/var(--tw-text-opacity,1))}.text-sky-700{--tw-text-opacity:1;color:rgb(3 105 161/var(--tw-text-opacity,1))}.text-tierra{--tw-text-opacity:1;color:rgb(94 67 49/var(--tw-text-opacity,1))}.text-tierra\/50{color:rgba(94,67,49,.5)}.text-tierra\/60{color:rgba(94,67,49,.6)}.text-tierra\/70{color:rgba(94,67,49,.7)}.text-tierra\/80{color:rgba(94,67,49,.8)}.text-transparent{color:transparent}.text-trigo{--tw-text-opacity:1;color:rgb(250 246 240/var(--tw-text-opacity,1))}.text-trigo\/40{color:hsla(36,50%,96%,.4)}.text-trigo\/50{color:hsla(36,50%,96%,.5)}.text-trigo\/60{color:hsla(36,50%,96%,.6)}.text-trigo\/75{color:hsla(36,50%,96%,.75)}.text-trigo\/80{color:hsla(36,50%,96%,.8)}.text-trigo\/85{color:hsla(36,50%,96%,.85)}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.text-white\/85{color:hsla(0,0%,100%,.85)}.text-white\/90{color:hsla(0,0%,100%,.9)}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-40{opacity:.4}.opacity-80{opacity:.8}.opacity-85{opacity:.85}.opacity-90{opacity:.9}.opacity-\[\.07\]{opacity:.07}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgba(0,0,0,.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color)}.shadow-2xl,.shadow-lg{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color)}.shadow-md{--tw-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color),0 2px 4px -2px var(--tw-shadow-color)}.shadow-md,.shadow-sm{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgba(0,0,0,.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color),0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-atardecer\/25{--tw-shadow-color:rgba(230,126,34,.25);--tw-shadow:var(--tw-shadow-colored)}.shadow-pradera\/20{--tw-shadow-color:rgba(31,61,51,.2);--tw-shadow:var(--tw-shadow-colored)}.shadow-pradera\/25{--tw-shadow-color:rgba(31,61,51,.25);--tw-shadow:var(--tw-shadow-colored)}.shadow-pradera\/30{--tw-shadow-color:rgba(31,61,51,.3);--tw-shadow:var(--tw-shadow-colored)}.ring-4{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.ring-brote\/40{--tw-ring-color:rgba(114,168,98,.4)}.blur-2xl{--tw-blur:blur(40px)}.blur-2xl,.blur-3xl{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.blur-3xl{--tw-blur:blur(64px)}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur{--tw-backdrop-blur:blur(8px)}.backdrop-blur,.backdrop-blur-md{-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px)}.backdrop-blur-sm,.backdrop-blur-xl{-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-xl{--tw-backdrop-blur:blur(24px)}.transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-colors{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.duration-300{transition-duration:.3s}.duration-500{transition-duration:.5s}.ease-in{transition-timing-function:cubic-bezier(.4,0,1,1)}.ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}.ease-out{transition-timing-function:cubic-bezier(0,0,.2,1)}.placeholder\:text-tierra\/40::-moz-placeholder{color:rgba(94,67,49,.4)}.placeholder\:text-tierra\/40::placeholder{color:rgba(94,67,49,.4)}.hover\:-translate-y-0\.5:hover{--tw-translate-y:-0.125rem}.hover\:-translate-y-0\.5:hover,.hover\:-translate-y-1:hover{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:-translate-y-1:hover{--tw-translate-y:-0.25rem}.hover\:-translate-y-2:hover{--tw-translate-y:-0.5rem}.hover\:-translate-y-2:hover,.hover\:scale-105:hover{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05}.hover\:scale-110:hover{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:border-pradera:hover{--tw-border-opacity:1;border-color:rgb(31 61 51/var(--tw-border-opacity,1))}.hover\:bg-atardecer-700:hover{--tw-bg-opacity:1;background-color:rgb(181 94 21/var(--tw-bg-opacity,1))}.hover\:bg-pradera-700:hover{--tw-bg-opacity:1;background-color:rgb(22 44 36/var(--tw-bg-opacity,1))}.hover\:bg-pradera\/5:hover{background-color:rgba(31,61,51,.05)}.hover\:bg-red-100:hover{--tw-bg-opacity:1;background-color:rgb(254 226 226/var(--tw-bg-opacity,1))}.hover\:bg-red-50:hover{--tw-bg-opacity:1;background-color:rgb(254 242 242/var(--tw-bg-opacity,1))}.hover\:bg-trigo:hover{--tw-bg-opacity:1;background-color:rgb(250 246 240/var(--tw-bg-opacity,1))}.hover\:bg-white\/25:hover{background-color:hsla(0,0%,100%,.25)}.hover\:text-pradera:hover{--tw-text-opacity:1;color:rgb(31 61 51/var(--tw-text-opacity,1))}.hover\:text-red-600:hover{--tw-text-opacity:1;color:rgb(220 38 38/var(--tw-text-opacity,1))}.hover\:shadow-2xl:hover{--tw-shadow:0 25px 50px -12px rgba(0,0,0,.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color)}.hover\:shadow-2xl:hover,.hover\:shadow-lg:hover{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.hover\:shadow-lg:hover{--tw-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color)}.hover\:shadow-md:hover{--tw-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color),0 2px 4px -2px var(--tw-shadow-color)}.hover\:shadow-md:hover,.hover\:shadow-xl:hover{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.hover\:shadow-xl:hover{--tw-shadow:0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color),0 8px 10px -6px var(--tw-shadow-color)}.focus\:not-sr-only:focus{position:static;width:auto;height:auto;padding:0;margin:0;overflow:visible;clip:auto;white-space:normal}.focus\:fixed:focus{position:fixed}.focus\:left-4:focus{left:1rem}.focus\:top-4:focus{top:1rem}.focus\:z-\[100\]:focus{z-index:100}.focus\:rounded-xl:focus{border-radius:.75rem}.focus\:border-pradera:focus{--tw-border-opacity:1;border-color:rgb(31 61 51/var(--tw-border-opacity,1))}.focus\:bg-atardecer:focus{--tw-bg-opacity:1;background-color:rgb(230 126 34/var(--tw-bg-opacity,1))}.focus\:px-4:focus{padding-left:1rem;padding-right:1rem}.focus\:py-2:focus{padding-top:.5rem;padding-bottom:.5rem}.focus\:font-bold:focus{font-weight:700}.focus\:text-white:focus{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-4:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.focus\:ring-brote\/30:focus{--tw-ring-color:rgba(114,168,98,.3)}.focus-visible\:ring-4:focus-visible{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.focus-visible\:ring-brote\/50:focus-visible{--tw-ring-color:rgba(114,168,98,.5)}.active\:scale-95:active{--tw-scale-x:.95;--tw-scale-y:.95}.active\:scale-95:active,.active\:scale-\[\.98\]:active{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.active\:scale-\[\.98\]:active{--tw-scale-x:.98;--tw-scale-y:.98}.group:hover .group-hover\:translate-x-1{--tw-translate-x:0.25rem}.group:hover .group-hover\:rotate-\[-8deg\],.group:hover .group-hover\:translate-x-1{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:rotate-\[-8deg\]{--tw-rotate:-8deg}.group:hover .group-hover\:scale-110{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.peer:checked~.peer-checked\:border-brote-700{--tw-border-opacity:1;border-color:rgb(82 122 69/var(--tw-border-opacity,1))}.peer:checked~.peer-checked\:border-red-500{--tw-border-opacity:1;border-color:rgb(239 68 68/var(--tw-border-opacity,1))}.peer:checked~.peer-checked\:bg-brote\/15{background-color:rgba(114,168,98,.15)}.peer:checked~.peer-checked\:bg-red-50{--tw-bg-opacity:1;background-color:rgb(254 242 242/var(--tw-bg-opacity,1))}.peer:checked~.peer-checked\:text-pradera{--tw-text-opacity:1;color:rgb(31 61 51/var(--tw-text-opacity,1))}.peer:checked~.peer-checked\:text-red-700{--tw-text-opacity:1;color:rgb(185 28 28/var(--tw-text-opacity,1))}.dark\:block:is(.dark *){display:block}.dark\:hidden:is(.dark *){display:none}.dark\:border-black:is(.dark *){--tw-border-opacity:1;border-color:rgb(0 0 0/var(--tw-border-opacity,1))}.dark\:border-brote:is(.dark *){--tw-border-opacity:1;border-color:rgb(114 168 98/var(--tw-border-opacity,1))}.dark\:border-red-500\/20:is(.dark *){border-color:rgba(239,68,68,.2)}.dark\:border-red-500\/30:is(.dark *){border-color:rgba(239,68,68,.3)}.dark\:border-trigo\/20:is(.dark *){border-color:hsla(36,50%,96%,.2)}.dark\:border-white\/10:is(.dark *){border-color:hsla(0,0%,100%,.1)}.dark\:border-white\/5:is(.dark *){border-color:hsla(0,0%,100%,.05)}.dark\:bg-atardecer\/10:is(.dark *){background-color:rgba(230,126,34,.1)}.dark\:bg-black:is(.dark *){--tw-bg-opacity:1;background-color:rgb(0 0 0/var(--tw-bg-opacity,1))}.dark\:bg-brote:is(.dark *){--tw-bg-opacity:1;background-color:rgb(114 168 98/var(--tw-bg-opacity,1))}.dark\:bg-brote\/10:is(.dark *){background-color:rgba(114,168,98,.1)}.dark\:bg-noche:is(.dark *){--tw-bg-opacity:1;background-color:rgb(19 26 23/var(--tw-bg-opacity,1))}.dark\:bg-noche-card:is(.dark *){--tw-bg-opacity:1;background-color:rgb(27 36 32/var(--tw-bg-opacity,1))}.dark\:bg-noche-card\/30:is(.dark *){background-color:rgba(27,36,32,.3)}.dark\:bg-noche-card\/40:is(.dark *){background-color:rgba(27,36,32,.4)}.dark\:bg-noche-card\/50:is(.dark *){background-color:rgba(27,36,32,.5)}.dark\:bg-noche\/90:is(.dark *){background-color:rgba(19,26,23,.9)}.dark\:bg-pradera-900:is(.dark *){--tw-bg-opacity:1;background-color:rgb(14 28 23/var(--tw-bg-opacity,1))}.dark\:bg-red-500\/10:is(.dark *){background-color:rgba(239,68,68,.1)}.dark\:bg-red-500\/15:is(.dark *){background-color:rgba(239,68,68,.15)}.dark\:bg-sky-500\/10:is(.dark *){background-color:rgba(14,165,233,.1)}.dark\:bg-sky-500\/15:is(.dark *){background-color:rgba(14,165,233,.15)}.dark\:bg-white\/10:is(.dark *){background-color:hsla(0,0%,100%,.1)}.dark\:bg-white\/20:is(.dark *){background-color:hsla(0,0%,100%,.2)}.dark\:bg-white\/5:is(.dark *){background-color:hsla(0,0%,100%,.05)}.dark\:text-atardecer:is(.dark *){--tw-text-opacity:1;color:rgb(230 126 34/var(--tw-text-opacity,1))}.dark\:text-brote:is(.dark *){--tw-text-opacity:1;color:rgb(114 168 98/var(--tw-text-opacity,1))}.dark\:text-noche:is(.dark *){--tw-text-opacity:1;color:rgb(19 26 23/var(--tw-text-opacity,1))}.dark\:text-red-300:is(.dark *){--tw-text-opacity:1;color:rgb(252 165 165/var(--tw-text-opacity,1))}.dark\:text-red-400:is(.dark *){--tw-text-opacity:1;color:rgb(248 113 113/var(--tw-text-opacity,1))}.dark\:text-sky-300:is(.dark *){--tw-text-opacity:1;color:rgb(125 211 252/var(--tw-text-opacity,1))}.dark\:text-trigo:is(.dark *){--tw-text-opacity:1;color:rgb(250 246 240/var(--tw-text-opacity,1))}.dark\:text-trigo\/40:is(.dark *){color:hsla(36,50%,96%,.4)}.dark\:text-trigo\/50:is(.dark *){color:hsla(36,50%,96%,.5)}.dark\:text-trigo\/60:is(.dark *){color:hsla(36,50%,96%,.6)}.dark\:text-trigo\/70:is(.dark *){color:hsla(36,50%,96%,.7)}.dark\:text-trigo\/75:is(.dark *){color:hsla(36,50%,96%,.75)}.dark\:text-trigo\/80:is(.dark *){color:hsla(36,50%,96%,.8)}.dark\:opacity-25:is(.dark *){opacity:.25}.dark\:hover\:bg-noche:hover:is(.dark *){--tw-bg-opacity:1;background-color:rgb(19 26 23/var(--tw-bg-opacity,1))}.dark\:hover\:bg-red-500\/10:hover:is(.dark *){background-color:rgba(239,68,68,.1)}.dark\:hover\:bg-red-500\/20:hover:is(.dark *){background-color:rgba(239,68,68,.2)}.dark\:hover\:text-brote:hover:is(.dark *){--tw-text-opacity:1;color:rgb(114 168 98/var(--tw-text-opacity,1))}.peer:checked~.dark\:peer-checked\:bg-red-500\/10:is(.dark *){background-color:rgba(239,68,68,.1)}.peer:checked~.dark\:peer-checked\:text-brote:is(.dark *){--tw-text-opacity:1;color:rgb(114 168 98/var(--tw-text-opacity,1))}.peer:checked~.dark\:peer-checked\:text-red-300:is(.dark *){--tw-text-opacity:1;color:rgb(252 165 165/var(--tw-text-opacity,1))}@media (min-width:420px){.min-\[420px\]\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:640px){.sm\:col-span-2{grid-column:span 2/span 2}.sm\:block{display:block}.sm\:inline-flex{display:inline-flex}.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.sm\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.sm\:flex-row{flex-direction:row}.sm\:p-10{padding:2.5rem}.sm\:p-8{padding:2rem}.sm\:p-9{padding:2.25rem}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:py-24{padding-top:6rem;padding-bottom:6rem}.sm\:py-28{padding-top:7rem;padding-bottom:7rem}.sm\:py-32{padding-top:8rem}.sm\:pb-32,.sm\:py-32{padding-bottom:8rem}.sm\:pt-40{padding-top:10rem}.sm\:text-3xl{font-size:1.875rem;line-height:2.25rem}.sm\:text-4xl{font-size:2.25rem;line-height:2.5rem}.sm\:text-5xl{font-size:3rem;line-height:1}.sm\:text-6xl{font-size:3.75rem;line-height:1}.sm\:text-base{font-size:1rem;line-height:1.5rem}.sm\:text-xl{font-size:1.25rem;line-height:1.75rem}.sm\:text-xs{font-size:.75rem;line-height:1rem}}@media (min-width:768px){.md\:block{display:block}.md\:hidden{display:none}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.md\:grid-cols-5{grid-template-columns:repeat(5,minmax(0,1fr))}.md\:gap-4{gap:1rem}}@media (min-width:1024px){.lg\:order-1{order:1}.lg\:order-2{order:2}.lg\:col-span-2{grid-column:span 2/span 2}.lg\:col-span-3{grid-column:span 3/span 3}.lg\:mt-0{margin-top:0}.lg\:block{display:block}.lg\:grid{display:grid}.lg\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.lg\:grid-cols-5{grid-template-columns:repeat(5,minmax(0,1fr))}.lg\:flex-row{flex-direction:row}.lg\:items-center{align-items:center}.lg\:justify-between{justify-content:space-between}.lg\:gap-14{gap:3.5rem}.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:text-left{text-align:left}.lg\:text-7xl{font-size:4.5rem;line-height:1}}@media (min-width:1280px){.xl\:flex{display:flex}.xl\:hidden{display:none}}</style>
+
+  <style>
+    body { -webkit-font-smoothing: antialiased; }
+    html, body { overflow-x: clip; } /* nada se sale de lado en el celular */
+    input[type="date"] { min-width: 0; }
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity .8s cubic-bezier(.16,1,.3,1), transform .8s cubic-bezier(.16,1,.3,1); }
+    .reveal.visible { opacity: 1; transform: none; }
+    .toast { opacity: 0; transform: translateY(15px) scale(.95); transition: all .35s cubic-bezier(.16,1,.3,1); }
+    .toast.show { opacity: 1; transform: none; }
+    .campo-error { border-color: #DC2626 !important; box-shadow: 0 0 0 4px rgba(220,38,38,.15) !important; animation: vibrar .3s ease; }
+    @keyframes vibrar { 0%,100% { transform: translateX(0); } 25% { transform: translateX(-4px); } 75% { transform: translateX(4px); } }
+    @keyframes flotar { 0%,100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-10px) rotate(1deg); } }
+    .flotar { animation: flotar 6s ease-in-out infinite; }
+    .barra { transition: width 1s cubic-bezier(.16,1,.3,1); }
+
+    /* ===== ANIMACIONES NUEVAS ===== */
+    /* Aparición escalonada: cada elemento espera su turno (--d) */
+    .reveal { transition-delay: var(--d, 0ms); }
+    /* Variantes de entrada */
+    .reveal.desde-izq { transform: translateX(-40px); }
+    .reveal.desde-der { transform: translateX(40px); }
+    .reveal.zoom { transform: scale(.92); }
+    .reveal.visible.desde-izq, .reveal.visible.desde-der, .reveal.visible.zoom { transform: none; }
+
+    /* Cinta de palabras que se desliza sin fin */
+    @keyframes cinta { to { transform: translateX(-50%); } }
+    .cinta { animation: cinta 35s linear infinite; }
+    .cinta:hover { animation-play-state: paused; }
+
+    /* Emojis que flotan en el fondo del inicio */
+    @keyframes flotar-lento { 0%,100% { transform: translateY(0) rotate(-6deg); } 50% { transform: translateY(-18px) rotate(6deg); } }
+    .flota { animation: flotar-lento 7s ease-in-out infinite; animation-delay: var(--d, 0s); }
+
+    /* Flechas de la cadena campo → ciudad (pulso que avanza) */
+    @keyframes avanzar-h { 0% { transform: translate(-6px, -50%); opacity: .3; } 50% { opacity: 1; } 100% { transform: translate(6px, -50%); opacity: .3; } }
+    @keyframes avanzar-v { 0% { transform: translate(-50%, -6px); opacity: .3; } 50% { opacity: 1; } 100% { transform: translate(-50%, 6px); opacity: .3; } }
+    .flecha-h { animation: avanzar-h 1.4s ease-in-out infinite; }
+    .flecha-v { animation: avanzar-v 1.4s ease-in-out infinite; }
+
+    /* Íconos de la cadena que "rebotan" al pasar el mouse */
+    @keyframes rebote { 0%,100% { transform: translateY(0); } 40% { transform: translateY(-10px) scale(1.1); } }
+    .eslabon:hover .icono-cadena { animation: rebote .6s ease; }
+
+    /* Brillo que recorre los botones naranjas */
+    .btn-accion { position: relative; overflow: hidden; }
+    .btn-accion::after { content: ''; position: absolute; inset: 0; background: linear-gradient(110deg, transparent 30%, rgba(255,255,255,.35) 50%, transparent 70%); transform: translateX(-120%); transition: transform .7s ease; }
+    .btn-accion:hover::after { transform: translateX(120%); }
+
+    /* Modal que aparece suave */
+    @keyframes modal-entra { from { opacity: 0; transform: translateY(24px) scale(.97); } to { opacity: 1; transform: none; } }
+    @keyframes fondo-entra { from { opacity: 0; } to { opacity: 1; } }
+    #modal-animal.flex { animation: fondo-entra .25s ease; }
+    #modal-animal.flex > div { animation: modal-entra .35s cubic-bezier(.16,1,.3,1); }
+
+    /* Tarjetas de la lista que entran una por una */
+    @keyframes entra-tarjeta { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+    .entra { animation: entra-tarjeta .45s cubic-bezier(.16,1,.3,1) both; animation-delay: var(--d, 0ms); }
+
+    /* Panel de pestañas que aparece suave */
+    .tab-panel:not(.hidden) { animation: entra-tarjeta .4s ease both; }
+
+    /* Respuesta de temporada / desayuno */
+    .cambia { animation: entra-tarjeta .45s cubic-bezier(.16,1,.3,1) both; }
+
+
+    /* ===== SIMULADOR ===== */
+    .sim-pantalla { position: absolute; inset: 0 1rem; opacity: 0; transform: translateX(24px); transition: opacity .45s ease, transform .45s cubic-bezier(.16,1,.3,1); pointer-events: none; }
+    .sim-pantalla.activa { opacity: 1; transform: none; }
+    .sim-item { opacity: 0; transform: translateY(10px); transition: opacity .4s ease, transform .4s cubic-bezier(.16,1,.3,1); }
+    .sim-item.ver { opacity: 1; transform: none; }
+    .sim-columna { height: 0; transition: height .7s cubic-bezier(.16,1,.3,1); }
+    .sim-columna.ver { height: var(--h); }
+    .sim-meta, .sim-meta2 { width: 0; transition: width 1.1s cubic-bezier(.16,1,.3,1); }
+    .sim-meta.ver { width: 75%; } .sim-meta2.ver { width: 96%; }
+    .sim-noti { opacity: 0; transform: translateY(-140%); transition: opacity .4s ease, transform .5s cubic-bezier(.16,1,.3,1); }
+    .sim-noti.ver { opacity: 1; transform: none; }
+    .sim-cursor { opacity: 0; color: #E67E22; font-weight: 800; }
+    .sim-cursor.activo { opacity: 1; animation: parpadeo .8s steps(1) infinite; }
+    @keyframes parpadeo { 50% { opacity: 0; } }
+    #sim-btn.presionado { transform: scale(.94); filter: brightness(1.2); }
+    .sim-tab { transition: background-color .3s ease, transform .3s ease; }
+    .sim-tab.activo { background: rgba(114,168,98,.25); transform: scale(1.12); }
+    .sim-paso { position: relative; overflow: hidden; border-width: 2px; }
+    .sim-paso.activo { border-color: #E67E22; box-shadow: 0 10px 25px -10px rgba(230,126,34,.45); }
+    .sim-paso.activo .sim-num { background: #E67E22; color: #fff; }
+    .sim-barra-fondo { position: absolute; left: 0; right: 0; bottom: 0; height: 4px; }
+    .sim-barra { display: block; height: 100%; width: 0; background: linear-gradient(90deg, #72A862, #E67E22); }
+    .sim-paso.activo .sim-barra { animation: llenar 6s linear forwards; }
+    #sim-pasos.pausado .sim-paso.activo .sim-barra { animation: none; width: 100%; opacity: .5; }
+    @keyframes llenar { to { width: 100%; } }
+    /* ===== MINI MAPA DE REGIONES ===== */
+    .region { border-radius: .75rem; padding: .9rem .25rem; background: rgba(94,67,49,.08); color: #5E4331; transition: all .35s cubic-bezier(.16,1,.3,1); }
+    .dark .region { background: rgba(255,255,255,.05); color: rgba(250,246,240,.6); }
+    .region.activa { background: #E67E22; color: #fff; transform: scale(1.06); box-shadow: 0 8px 20px rgba(230,126,34,.35); }
+    .region.activa::before { content: '📍 '; }
+
+    /* ===== FIERRO AL ROJO VIVO ===== */
+    @keyframes calor { 0%,100% { opacity: .55; } 50% { opacity: 1; } }
+    .calor { animation: calor 2.4s ease-in-out infinite; }
+    .calor-fondo { animation: calor 3s ease-in-out infinite; }
+    @keyframes humo { 0% { transform: translateY(10px); opacity: 0; } 30% { opacity: .7; } 100% { transform: translateY(-30px); opacity: 0; } }
+    .humo { animation: humo 3.3s ease-out infinite; animation-delay: var(--d, 0s); transform-box: fill-box; }
+    @keyframes chispa { 0% { transform: translate(0,0); opacity: 1; } 100% { transform: translate(var(--x), 30px); opacity: 0; } }
+    .chispa { animation: chispa 2.8s ease-in infinite; animation-delay: var(--d, 0s); }
+    .fierro-ilustracion { transition: transform .6s cubic-bezier(.16,1,.3,1); }
+    .fierro-ilustracion:hover { transform: rotate(-3deg) scale(1.03); }
+    /* Respeta a quien prefiere menos movimiento */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+      .reveal { opacity: 1 !important; transform: none !important; }
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+
+<body class="bg-trigo font-sans text-noche transition-colors duration-300 dark:bg-noche dark:text-trigo">
+  <!-- Definiciones del logo "fierro": degradado de hierro al rojo vivo y brillo -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="fierro-calor" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#FFE3A3"/><stop offset=".45" stop-color="#F59E0B"/><stop offset="1" stop-color="#C2410C"/>
+      </linearGradient>
+      <filter id="fierro-brillo" x="-30%" y="-30%" width="160%" height="160%">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="1.1" result="b"/>
+        <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+      <filter id="fierro-brillo-grande" x="-40%" y="-40%" width="180%" height="180%">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="3.5" result="b"/>
+        <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+      <linearGradient id="fierro-madera" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9A6B3F"/><stop offset=".5" stop-color="#7A4F2A"/><stop offset="1" stop-color="#5A381C"/></linearGradient>
+      <linearGradient id="fierro-varilla" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#55524E"/><stop offset=".6" stop-color="#3D3A37"/><stop offset=".85" stop-color="#9A3412"/><stop offset="1" stop-color="#F59E0B"/></linearGradient>
+    </defs>
+  </svg>
+
+
+  <a href="#app" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-xl focus:bg-atardecer focus:px-4 focus:py-2 focus:font-bold focus:text-white">Ir a mi libreta</a>
+
+  <!-- NAVBAR -->
+  <header id="navbar" class="fixed inset-x-0 top-0 z-50 transition-all duration-300">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+      <a href="#inicio" class="group flex items-center gap-2.5 transition-transform hover:scale-105" aria-label="Corral Digital, ir al inicio">
+        <svg class="h-10 w-10 shrink-0 transition-transform duration-500 group-hover:rotate-[-8deg]" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="14" fill="#1E1712"/><rect x="1" y="1" width="46" height="46" rx="13" fill="none" stroke="#E67E22" stroke-opacity=".25"/><g fill="url(#fierro-calor)" stroke="url(#fierro-calor)" stroke-linecap="round" stroke-linejoin="round" filter="url(#fierro-brillo)"><path fill="none" d="M12 12 V37.5 H36" stroke-width="3.3"/><path fill="none" d="M12 12 c0 -3.4 -3.6 -4.6 -5.6 -2" stroke-width="2.6"/><path fill="none" d="M36 37.5 c3.2 0 4.4 -3.6 2 -5.6" stroke-width="2.6"/><path fill="none" d="M21 11.5 V33 M21 11.5 H28.3 a5 5 0 0 1 0 10.2 H21 M21 21.7 H29.4 a5.65 5.65 0 0 1 0 11.3 H21" stroke-width="3"/><circle cx="6.4" cy="10" r="1.6" stroke="none"/><circle cx="38" cy="31.9" r="1.6" stroke="none"/></g></svg>
+        <span class="font-display text-xl font-extrabold tracking-tight text-pradera dark:text-trigo">Corral<span class="text-atardecer">Digital</span></span>
+      </a>
+
+      <ul class="hidden items-center gap-1 xl:flex">
+        <li><a href="#simulador" class="rounded-xl px-3 py-2 font-semibold text-tierra transition hover:bg-pradera/5 hover:text-pradera dark:text-trigo/80 dark:hover:text-brote">Cómo funciona</a></li>
+        <li><a href="#campo" class="rounded-xl px-3 py-2 font-semibold text-tierra transition hover:bg-pradera/5 hover:text-pradera dark:text-trigo/80 dark:hover:text-brote">Campo y ciudad</a></li>
+        <li><a href="#app" class="rounded-xl px-3 py-2 font-semibold text-tierra transition hover:bg-pradera/5 hover:text-pradera dark:text-trigo/80 dark:hover:text-brote">Mi libreta</a></li>
+        <li><a href="#estados" class="rounded-xl px-3 py-2 font-semibold text-tierra transition hover:bg-pradera/5 hover:text-pradera dark:text-trigo/80 dark:hover:text-brote">Tu estado</a></li>
+        <li><a href="#puente" class="rounded-xl px-3 py-2 font-semibold text-tierra transition hover:bg-pradera/5 hover:text-pradera dark:text-trigo/80 dark:hover:text-brote">Jóvenes</a></li>
+        <li><a href="#contacto" class="rounded-xl px-3 py-2 font-semibold text-tierra transition hover:bg-pradera/5 hover:text-pradera dark:text-trigo/80 dark:hover:text-brote">Contacto</a></li>
+      </ul>
+
+      <div class="flex items-center gap-3">
+        <button id="btn-tema" type="button" class="grid h-11 w-11 place-items-center rounded-2xl border border-tierra/15 bg-white/80 text-pradera transition-transform hover:scale-110 active:scale-95 dark:border-white/10 dark:bg-noche-card dark:text-brote" aria-label="Cambiar modo oscuro">
+          <svg class="h-5 w-5 dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="hidden h-5 w-5 dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path stroke-linecap="round" d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4m11.4-11.4 1.4-1.4"/></svg>
+        </button>
+        <a href="#app" data-ir-tab="corral" class="btn-accion hidden !px-5 !py-3 sm:inline-flex">Empezar gratis</a>
+        <button id="btn-menu" type="button" class="grid h-11 w-11 place-items-center rounded-2xl border border-tierra/15 bg-white/80 text-pradera xl:hidden dark:border-white/10 dark:bg-noche-card dark:text-trigo" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-movil">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2"><path id="icono-menu" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </nav>
+
+    <div id="menu-movil" class="mx-4 hidden rounded-3xl border border-tierra/10 bg-white p-4 shadow-2xl transition-all duration-300 xl:hidden dark:border-white/10 dark:bg-noche-card">
+      <a href="#simulador" class="enlace-movil block rounded-2xl px-4 py-3 font-semibold hover:bg-trigo dark:hover:bg-noche">📱 Cómo funciona</a>
+      <a href="#por-que" class="enlace-movil block rounded-2xl px-4 py-3 font-semibold hover:bg-trigo dark:hover:bg-noche">🤔 ¿Por qué cambiar?</a>
+      <a href="#campo" class="enlace-movil block rounded-2xl px-4 py-3 font-semibold hover:bg-trigo dark:hover:bg-noche">🌎 Del campo a la ciudad</a>
+      <a href="#estados" class="enlace-movil block rounded-2xl px-4 py-3 font-semibold hover:bg-trigo dark:hover:bg-noche">🇲🇽 Tu estado</a>
+      <a href="#app" class="enlace-movil block rounded-2xl px-4 py-3 font-semibold hover:bg-trigo dark:hover:bg-noche">📒 Mi libreta</a>
+      <a href="#impacto" class="enlace-movil block rounded-2xl px-4 py-3 font-semibold hover:bg-trigo dark:hover:bg-noche">🌱 Impacto al Campo</a>
+      <a href="#puente" class="enlace-movil block rounded-2xl px-4 py-3 font-semibold hover:bg-trigo dark:hover:bg-noche">🌉 Jóvenes</a>
+      <a href="#contacto" class="enlace-movil block rounded-2xl px-4 py-3 font-semibold hover:bg-trigo dark:hover:bg-noche">💬 Contacto</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="inicio" class="relative overflow-hidden pt-32 pb-24 sm:pt-40 sm:pb-32">
+      <div class="pointer-events-none absolute -right-32 -top-32 h-[30rem] w-[30rem] rounded-full bg-brote/20 blur-3xl dark:bg-brote/10"></div>
+      <div class="pointer-events-none absolute -left-40 top-40 h-80 w-80 rounded-full bg-atardecer/15 blur-3xl dark:bg-atardecer/10"></div>
+      <!-- Emojis del campo flotando en el fondo -->
+      <div class="pointer-events-none absolute inset-0 select-none opacity-40 dark:opacity-25" aria-hidden="true">
+        <span class="flota absolute left-[6%] top-[18%] text-4xl" style="--d:0s">🌾</span>
+        <span class="flota absolute left-[44%] top-[12%] hidden text-3xl lg:block" style="--d:1.2s">☀️</span>
+        <span class="flota absolute right-[8%] top-[70%] text-4xl" style="--d:2s">🌧️</span>
+        <span class="flota absolute left-[38%] bottom-[8%] text-3xl" style="--d:.6s">🌽</span>
+        <span class="flota absolute right-[42%] top-[30%] hidden text-2xl lg:block" style="--d:3s">🍃</span>
+      </div>
+
+      <div class="relative mx-auto grid max-w-7xl items-center gap-14 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+        <div class="reveal desde-izq">
+          <span class="eyebrow">🌾 Hecho en Michoacán, para el campo mexicano</span>
+          <h1 class="font-display text-[2.7rem] font-extrabold leading-[1.08] tracking-tight text-pradera sm:text-6xl lg:text-7xl dark:text-trigo">
+            La libreta de tu rancho,
+            <span class="relative whitespace-nowrap text-atardecer">
+              ahora en tu celular
+              <svg class="absolute -bottom-2 left-0 w-full" viewBox="0 0 300 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9 C 80 2, 200 2, 298 8" stroke="#72A862" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
+            </span>
+          </h1>
+          <p class="mt-7 max-w-xl text-lg leading-relaxed text-tierra sm:text-xl dark:text-trigo/75">
+            Lleva el control de cada animal: su engorda, su peso semana a semana, su salud y las cuentas del rancho. Todo en la palma de tu mano.
+          </p>
+          <div class="mt-9 flex flex-col gap-4 sm:flex-row">
+            <a href="#app" data-ir-tab="corral" class="btn-accion text-lg">🐄 Ver panel de animales</a>
+            <a href="#simulador" class="btn-fantasma text-lg">▶ Mira cómo funciona</a>
+          </div>
+          <ul class="mt-10 flex flex-wrap gap-x-8 gap-y-3 text-sm font-bold text-tierra dark:text-trigo/70">
+            <li class="flex items-center gap-2"><span class="grid h-5 w-5 place-items-center rounded-full bg-brote text-[10px] text-white shadow-sm">✓</span>Historial de Pesos</li>
+            <li class="flex items-center gap-2"><span class="grid h-5 w-5 place-items-center rounded-full bg-brote text-[10px] text-white shadow-sm">✓</span>Control de Enfermedades</li>
+            <li class="flex items-center gap-2"><span class="grid h-5 w-5 place-items-center rounded-full bg-brote text-[10px] text-white shadow-sm">✓</span>Madre e Hijo vinculados</li>
+          </ul>
+        </div>
+
+        <div class="reveal desde-der relative mx-auto w-full max-w-sm" style="--d:200ms">
+          <div class="absolute -left-6 top-14 z-10 hidden rotate-[-6deg] rounded-3xl bg-white px-5 py-3.5 shadow-2xl transition-transform hover:scale-105 sm:block dark:bg-noche-card">
+            <p class="text-xs font-semibold text-tierra dark:text-trigo/60">🥩 Meta de Matadero</p>
+            <p class="font-display text-lg font-extrabold text-atardecer">¡Peso óptimo calculado!</p>
+          </div>
+          <div class="absolute -right-4 bottom-20 z-10 hidden rotate-[5deg] rounded-3xl bg-pradera px-5 py-3.5 text-white shadow-2xl transition-transform hover:scale-105 sm:block">
+            <p class="text-xs font-bold">🩺 Salud al día</p>
+            <p class="font-display text-lg font-extrabold">Cero bajas</p>
+          </div>
+
+          <div class="flotar rounded-[2.75rem] border-[10px] border-pradera-900 bg-trigo p-6 shadow-2xl shadow-pradera/25 dark:border-black dark:bg-noche">
+            <div class="mx-auto mb-5 h-1.5 w-20 rounded-full bg-pradera-900/20 dark:bg-white/20"></div>
+            <p class="text-sm font-semibold text-tierra dark:text-trigo/60">Panel Inteligente 🤠</p>
+            <p class="font-display text-2xl font-extrabold text-pradera dark:text-trigo">Control Total</p>
+
+            <div class="mt-5 rounded-3xl bg-pradera p-6 text-trigo shadow-lg">
+              <p class="text-sm opacity-80">Ganado registrado</p>
+              <p class="font-display text-5xl font-extrabold"><span id="hero-total">0</span> <span class="text-lg font-bold opacity-80">cabezas</span></p>
+            </div>
+            <div class="mt-3 grid grid-cols-2 gap-3">
+              <div class="rounded-2xl bg-white p-4 shadow-sm dark:bg-noche-card">
+                <p class="text-xs font-semibold text-tierra dark:text-trigo/60">🥩 En Engorda</p>
+                <p id="hero-engorda" class="mt-1 text-sm font-extrabold text-atardecer">0 animales</p>
+              </div>
+              <div class="rounded-2xl bg-white p-4 shadow-sm dark:bg-noche-card">
+                <p class="text-xs font-semibold text-tierra dark:text-trigo/60">⚖️ Ganancia prom.</p>
+                <p id="hero-ganancia" class="mt-1 text-sm font-extrabold text-pradera dark:text-brote">-- kg/sem</p>
+              </div>
+            </div>
+            <a href="#app" data-ir-tab="corral" class="mt-5 block rounded-2xl bg-atardecer py-3.5 text-center font-bold text-white shadow-md transition hover:bg-atardecer-700">Abrir Panel de Animales →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FRASE -->
+    <section class="bg-pradera py-14 text-trigo dark:bg-pradera-900">
+      <div class="reveal mx-auto max-w-4xl px-4 text-center">
+        <p class="font-display text-2xl font-bold leading-relaxed sm:text-4xl">
+          “Un buen ganadero conoce a cada animal por su arete y su historia.<br class="hidden sm:block"> <span class="text-brote">Ahora tu celular te ayuda a recordarlo todo.</span>”
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== NUESTRO FIERRO ========== -->
+    <section id="fierro" class="relative overflow-hidden bg-[#1E1712] py-20 text-trigo sm:py-24">
+      <div class="pointer-events-none absolute inset-0 opacity-[.07]" style="background-image:repeating-linear-gradient(90deg,#fff 0 2px,transparent 2px 120px)"></div>
+      <div class="pointer-events-none absolute right-[10%] top-1/2 h-72 w-72 -translate-y-1/2 rounded-full bg-atardecer/25 blur-3xl calor-fondo"></div>
+      <div class="relative mx-auto grid max-w-6xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+        <div class="reveal desde-izq order-2 lg:order-1">
+          <span class="mb-3 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-sm font-bold text-atardecer">🔥 Nuestro fierro</span>
+          <h2 class="font-display text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl">El fierro es la firma <span class="text-atardecer">del ganadero.</span></h2>
+          <p class="mt-5 max-w-lg text-lg leading-relaxed text-trigo/80">En el rancho, el fierro dice de quién es cada animal y cuenta la historia de una familia. Este es el mío: <strong class="text-atardecer">LB</strong>, de <strong class="text-trigo">Lizeth Bazán</strong>. Una ganadera que también escribe código, para que el campo y la tecnología caminen juntos.</p>
+          <p class="mt-4 font-display text-xl font-bold text-brote">Del corral al código. 🐄💻</p>
+        </div>
+        <div class="reveal desde-der order-1 lg:order-2">
+          <svg class="fierro-ilustracion mx-auto w-full max-w-[520px]" viewBox="0 0 420 170" role="img" aria-label="Fierro de herrar con las letras LB al rojo vivo">
+            <!-- Mango de madera -->
+            <rect x="4" y="72" width="168" height="22" rx="11" fill="url(#fierro-madera)"/>
+            <path d="M20 79 H150 M30 87 H140" stroke="#4A2E16" stroke-width="1.2" stroke-linecap="round" opacity=".6"/>
+            <!-- Amarre de cuero -->
+            <g stroke="#7A3E1D" stroke-width="4" stroke-linecap="round"><path d="M150 70 l6 26"/><path d="M158 70 l6 26"/><path d="M166 70 l6 26"/></g>
+            <!-- Varilla de hierro que se calienta hacia la punta -->
+            <rect x="170" y="79" width="146" height="8" rx="4" fill="url(#fierro-varilla)"/>
+            <!-- Humo -->
+            <g fill="none" stroke="#d6d3d1" stroke-width="3" stroke-linecap="round" opacity=".55">
+              <path class="humo" style="--d:0s" d="M330 30 q-8 -10 0 -20 q8 -10 0 -20"/>
+              <path class="humo" style="--d:1.1s" d="M360 30 q-8 -10 0 -20 q8 -10 0 -20"/>
+              <path class="humo" style="--d:2.2s" d="M390 32 q-8 -10 0 -20 q8 -10 0 -20"/>
+            </g>
+            <!-- Cabeza del fierro: el logo al rojo vivo -->
+            <g transform="translate(270 15) scale(2.9)" fill="url(#fierro-calor)" stroke="url(#fierro-calor)" stroke-linecap="round" stroke-linejoin="round">
+              <g class="calor" filter="url(#fierro-brillo-grande)"><path fill="none" d="M12 12 V37.5 H36" stroke-width="3.3"/><path fill="none" d="M12 12 c0 -3.4 -3.6 -4.6 -5.6 -2" stroke-width="2.6"/><path fill="none" d="M36 37.5 c3.2 0 4.4 -3.6 2 -5.6" stroke-width="2.6"/><path fill="none" d="M21 11.5 V33 M21 11.5 H28.3 a5 5 0 0 1 0 10.2 H21 M21 21.7 H29.4 a5.65 5.65 0 0 1 0 11.3 H21" stroke-width="3"/><circle cx="6.4" cy="10" r="1.6" stroke="none"/><circle cx="38" cy="31.9" r="1.6" stroke="none"/></g>
+              <g><path fill="none" d="M12 12 V37.5 H36" stroke-width="3.3"/><path fill="none" d="M12 12 c0 -3.4 -3.6 -4.6 -5.6 -2" stroke-width="2.6"/><path fill="none" d="M36 37.5 c3.2 0 4.4 -3.6 2 -5.6" stroke-width="2.6"/><path fill="none" d="M21 11.5 V33 M21 11.5 H28.3 a5 5 0 0 1 0 10.2 H21 M21 21.7 H29.4 a5.65 5.65 0 0 1 0 11.3 H21" stroke-width="3"/><circle cx="6.4" cy="10" r="1.6" stroke="none"/><circle cx="38" cy="31.9" r="1.6" stroke="none"/></g>
+            </g>
+            <!-- Chispas -->
+            <g fill="#FCD34D">
+              <circle class="chispa" style="--d:0s;--x:-18px" cx="345" cy="130" r="2"/>
+              <circle class="chispa" style="--d:.7s;--x:14px" cx="372" cy="128" r="1.6"/>
+              <circle class="chispa" style="--d:1.4s;--x:-8px" cx="320" cy="126" r="1.4"/>
+              <circle class="chispa" style="--d:2.1s;--x:20px" cx="395" cy="124" r="1.8"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SIMULADOR: MIRA CÓMO FUNCIONA ========== -->
+    <section id="simulador" class="relative scroll-mt-20 overflow-hidden py-20 sm:py-28">
+      <div class="pointer-events-none absolute -right-24 top-20 h-80 w-80 rounded-full bg-brote/15 blur-3xl"></div>
+      <div class="relative mx-auto grid max-w-6xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+        <!-- Texto y pasos -->
+        <div class="reveal desde-izq">
+          <span class="eyebrow">📱 Simulador</span>
+          <h2 class="titulo">Mira cómo funciona <span class="text-atardecer">en 20 segundos</span></h2>
+          <p class="mt-4 text-lg text-tierra dark:text-trigo/70">Así se ve Corral Digital en tu celular. Toca cada paso o deja que se reproduzca solo.</p>
+
+          <ol id="sim-pasos" class="mt-8 space-y-3">
+            <li><button type="button" data-paso="0" class="sim-paso card flex w-full items-center gap-4 p-4 text-left">
+              <span class="sim-num grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-trigo font-display text-lg font-extrabold text-pradera dark:bg-noche dark:text-trigo">1</span>
+              <span class="min-w-0 flex-1"><strong class="block font-display text-lg text-pradera dark:text-trigo">Registra a tu vaca</strong><span class="text-sm text-tierra dark:text-trigo/60">Arete, nombre y raza. Como en la libreta.</span></span>
+              <span class="sim-barra-fondo"><span class="sim-barra"></span></span>
+            </button></li>
+            <li><button type="button" data-paso="1" class="sim-paso card flex w-full items-center gap-4 p-4 text-left">
+              <span class="sim-num grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-trigo font-display text-lg font-extrabold text-pradera dark:bg-noche dark:text-trigo">2</span>
+              <span class="min-w-0 flex-1"><strong class="block font-display text-lg text-pradera dark:text-trigo">Pésala cada semana</strong><span class="text-sm text-tierra dark:text-trigo/60">Ves cuántos kilos gana, sin hacer cuentas.</span></span>
+              <span class="sim-barra-fondo"><span class="sim-barra"></span></span>
+            </button></li>
+            <li><button type="button" data-paso="2" class="sim-paso card flex w-full items-center gap-4 p-4 text-left">
+              <span class="sim-num grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-trigo font-display text-lg font-extrabold text-pradera dark:bg-noche dark:text-trigo">3</span>
+              <span class="min-w-0 flex-1"><strong class="block font-display text-lg text-pradera dark:text-trigo">Te avisa del parto</strong><span class="text-sm text-tierra dark:text-trigo/60">Sabes cuántos días faltan para cada becerro.</span></span>
+              <span class="sim-barra-fondo"><span class="sim-barra"></span></span>
+            </button></li>
+            <li><button type="button" data-paso="3" class="sim-paso card flex w-full items-center gap-4 p-4 text-left">
+              <span class="sim-num grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-trigo font-display text-lg font-extrabold text-pradera dark:bg-noche dark:text-trigo">4</span>
+              <span class="min-w-0 flex-1"><strong class="block font-display text-lg text-pradera dark:text-trigo">Cuentas claras</strong><span class="text-sm text-tierra dark:text-trigo/60">Lo que entra, lo que sale y si el rancho va ganando.</span></span>
+              <span class="sim-barra-fondo"><span class="sim-barra"></span></span>
+            </button></li>
+          </ol>
+
+          <div class="mt-6 flex flex-wrap gap-3">
+            <button type="button" id="sim-play" class="btn-fantasma !py-3" aria-label="Pausar simulador">⏸ Pausar</button>
+            <a href="#app" data-ir-tab="corral" class="btn-accion !py-3">Pruébalo de verdad →</a>
+          </div>
+        </div>
+
+        <!-- Celular -->
+        <div class="reveal desde-der relative mx-auto w-full max-w-[320px]" style="--d:150ms">
+          <div class="relative h-[620px] overflow-hidden rounded-[3rem] border-[12px] border-pradera-900 bg-trigo shadow-2xl shadow-pradera/30 dark:border-black dark:bg-noche" aria-live="polite">
+            <!-- Barra de estado -->
+            <div class="flex items-center justify-between px-6 pt-3 text-xs font-bold text-pradera dark:text-trigo/80"><span>9:41</span><span class="h-5 w-24 rounded-full bg-pradera-900 dark:bg-black"></span><span>📶 🔋</span></div>
+            <!-- Notificación que baja (paso 3) -->
+            <div id="sim-noti" class="sim-noti absolute inset-x-3 top-10 z-20 rounded-2xl bg-white/95 p-3 shadow-xl backdrop-blur dark:bg-noche-card">
+              <p class="text-[11px] font-bold text-tierra dark:text-trigo/60">🔔 CORRAL DIGITAL · ahora</p>
+              <p class="text-sm font-bold text-pradera dark:text-trigo">La Pinta pare en 12 días. ¡Prepárate! 🍼</p>
+            </div>
+            <!-- Encabezado de la app -->
+            <div class="mt-3 flex items-center gap-2 px-5">
+              <svg class="h-8 w-8" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="14" fill="#1E1712"/><rect x="1" y="1" width="46" height="46" rx="13" fill="none" stroke="#E67E22" stroke-opacity=".25"/><g fill="url(#fierro-calor)" stroke="url(#fierro-calor)" stroke-linecap="round" stroke-linejoin="round" filter="url(#fierro-brillo)"><path fill="none" d="M12 12 V37.5 H36" stroke-width="3.3"/><path fill="none" d="M12 12 c0 -3.4 -3.6 -4.6 -5.6 -2" stroke-width="2.6"/><path fill="none" d="M36 37.5 c3.2 0 4.4 -3.6 2 -5.6" stroke-width="2.6"/><path fill="none" d="M21 11.5 V33 M21 11.5 H28.3 a5 5 0 0 1 0 10.2 H21 M21 21.7 H29.4 a5.65 5.65 0 0 1 0 11.3 H21" stroke-width="3"/><circle cx="6.4" cy="10" r="1.6" stroke="none"/><circle cx="38" cy="31.9" r="1.6" stroke="none"/></g></svg>
+              <span class="font-display font-extrabold text-pradera dark:text-trigo">Corral<span class="text-atardecer">Digital</span></span>
+            </div>
+
+            <!-- Pantallas -->
+            <div class="relative mt-3 h-[455px] px-4">
+              <!-- 1. Registrar -->
+              <div class="sim-pantalla" data-pantalla="0">
+                <p class="font-display text-xl font-extrabold text-pradera dark:text-trigo">Nueva vaca 🐄</p>
+                <div class="mt-2 space-y-2">
+                  <div class="rounded-xl border border-tierra/15 bg-white px-3 py-1.5 dark:border-white/10 dark:bg-noche-card"><p class="text-[10px] font-bold text-pradera dark:text-brote">ARETE</p><p class="h-5 text-sm font-semibold"><span id="sim-arete"></span><span class="sim-cursor" data-campo="arete">|</span></p></div>
+                  <div class="rounded-xl border border-tierra/15 bg-white px-3 py-1.5 dark:border-white/10 dark:bg-noche-card"><p class="text-[10px] font-bold text-pradera dark:text-brote">NOMBRE</p><p class="h-5 text-sm font-semibold"><span id="sim-nombre"></span><span class="sim-cursor" data-campo="nombre">|</span></p></div>
+                  <div class="rounded-xl border border-tierra/15 bg-white px-3 py-1.5 dark:border-white/10 dark:bg-noche-card"><p class="text-[10px] font-bold text-pradera dark:text-brote">RAZA</p><p class="h-5 text-sm font-semibold"><span id="sim-raza"></span><span class="sim-cursor" data-campo="raza">|</span></p></div>
+                  <div class="rounded-xl border border-tierra/15 bg-white px-3 py-1.5 dark:border-white/10 dark:bg-noche-card"><p class="text-[10px] font-bold text-pradera dark:text-brote">ESTADO</p><p class="text-sm font-semibold">🥛 En ordeña</p></div>
+                </div>
+                <div id="sim-btn" class="mt-3 rounded-xl bg-pradera py-3 text-center text-sm font-bold text-trigo transition dark:bg-brote dark:text-noche">＋ Agregar al corral</div>
+                <div class="sim-item mt-3 flex items-center gap-3 rounded-2xl bg-white p-3 shadow-sm dark:bg-noche-card">
+                  <span class="grid h-10 w-10 place-items-center rounded-xl bg-trigo text-xl dark:bg-noche">🐄</span>
+                  <div class="flex-1"><p class="text-sm font-extrabold text-pradera dark:text-trigo">La Güera</p><p class="text-[11px] text-tierra dark:text-trigo/60">🏷️ MX-010 · Suizo</p></div>
+                  <span class="rounded-full bg-brote/20 px-2 py-0.5 text-[10px] font-bold text-pradera dark:text-brote">🥛 Leche</span>
+                </div>
+                <div class="sim-item mt-2 rounded-xl bg-pradera px-3 py-2 text-center text-xs font-bold text-trigo dark:bg-brote dark:text-noche">¡La Güera ya está en tu corral! 🎉</div>
+              </div>
+
+              <!-- 2. Pesadas -->
+              <div class="sim-pantalla" data-pantalla="1">
+                <p class="font-display text-xl font-extrabold text-pradera dark:text-trigo">El Rayo ⚖️</p>
+                <p class="text-xs text-tierra dark:text-trigo/60">🥩 Engorda · Charolais</p>
+                <div class="mt-4 rounded-2xl bg-white p-4 dark:bg-noche-card">
+                  <p class="text-[11px] font-bold text-tierra dark:text-trigo/60">PESADAS (kg)</p>
+                  <div class="mt-3 flex h-40 items-end justify-between gap-2">
+                    <div class="flex h-full flex-1 flex-col items-center justify-end gap-1"><span class="text-[10px] font-bold">380</span><div class="sim-columna w-full rounded-t-lg bg-brote/60" style="--h:45%"></div><span class="text-[10px] text-tierra dark:text-trigo/50">Sem 1</span></div>
+                    <div class="flex h-full flex-1 flex-col items-center justify-end gap-1"><span class="text-[10px] font-bold">392</span><div class="sim-columna w-full rounded-t-lg bg-brote/70" style="--h:56%"></div><span class="text-[10px] text-tierra dark:text-trigo/50">Sem 2</span></div>
+                    <div class="flex h-full flex-1 flex-col items-center justify-end gap-1"><span class="text-[10px] font-bold">401</span><div class="sim-columna w-full rounded-t-lg bg-brote/85" style="--h:66%"></div><span class="text-[10px] text-tierra dark:text-trigo/50">Sem 3</span></div>
+                    <div class="flex h-full flex-1 flex-col items-center justify-end gap-1"><span class="text-[10px] font-bold text-atardecer">410</span><div class="sim-columna w-full rounded-t-lg bg-atardecer" style="--h:78%"></div><span class="text-[10px] text-tierra dark:text-trigo/50">Hoy</span></div>
+                  </div>
+                </div>
+                <div class="sim-item mt-3 rounded-2xl bg-pradera p-4 text-trigo">
+                  <p class="text-xs opacity-80">Gana por semana</p>
+                  <p class="font-display text-3xl font-extrabold">+10 kg 📈</p>
+                </div>
+                <div class="sim-item mt-3 rounded-2xl bg-white p-3 dark:bg-noche-card">
+                  <div class="flex justify-between text-[11px] font-bold"><span>Camino a la venta (550 kg)</span><span>75%</span></div>
+                  <div class="mt-1 h-2.5 overflow-hidden rounded-full bg-tierra/15"><div class="sim-meta h-full rounded-full bg-gradient-to-r from-brote to-atardecer"></div></div>
+                  <p class="mt-1 text-[11px] text-tierra dark:text-trigo/60">A este ritmo: unas 14 semanas más</p>
+                </div>
+              </div>
+
+              <!-- 3. Parto -->
+              <div class="sim-pantalla" data-pantalla="2">
+                <p class="font-display text-xl font-extrabold text-pradera dark:text-trigo">Partos 🍼</p>
+                <div class="mt-3 rounded-2xl bg-atardecer p-4 text-white shadow-lg">
+                  <p class="text-xs font-bold opacity-90">⏰ PRÓXIMO PARTO</p>
+                  <p class="font-display text-2xl font-extrabold">La Pinta</p>
+                  <p class="font-display text-4xl font-extrabold"><span id="sim-dias">30</span> <span class="text-base">días</span></p>
+                  <div class="mt-2 h-2.5 overflow-hidden rounded-full bg-white/25"><div class="sim-meta2 h-full rounded-full bg-white"></div></div>
+                  <p class="mt-1 text-[11px] opacity-90">271 de 283 días de gestación</p>
+                </div>
+                <p class="mt-4 text-xs font-bold text-tierra dark:text-trigo/60">PREPÁRATE:</p>
+                <div class="mt-2 space-y-2 text-sm">
+                  <div class="sim-item flex items-center gap-2 rounded-xl bg-white p-2.5 dark:bg-noche-card"><span class="grid h-5 w-5 place-items-center rounded-full bg-brote text-[10px] text-white">✓</span>Corral limpio y seco</div>
+                  <div class="sim-item flex items-center gap-2 rounded-xl bg-white p-2.5 dark:bg-noche-card"><span class="grid h-5 w-5 place-items-center rounded-full bg-brote text-[10px] text-white">✓</span>Agua y sombra cerca</div>
+                  <div class="sim-item flex items-center gap-2 rounded-xl bg-white p-2.5 dark:bg-noche-card"><span class="grid h-5 w-5 place-items-center rounded-full bg-brote text-[10px] text-white">✓</span>Revisarla dos veces al día</div>
+                  <div class="sim-item flex items-center gap-2 rounded-xl bg-white p-2.5 dark:bg-noche-card"><span class="grid h-5 w-5 place-items-center rounded-full bg-brote text-[10px] text-white">✓</span>Curar el ombligo del becerro</div>
+                </div>
+              </div>
+
+              <!-- 4. Cuentas -->
+              <div class="sim-pantalla" data-pantalla="3">
+                <p class="font-display text-xl font-extrabold text-pradera dark:text-trigo">Cuentas 💰</p>
+                <div class="mt-3 rounded-2xl bg-pradera p-4 text-trigo shadow-lg">
+                  <p class="text-xs opacity-80">Balance del mes</p>
+                  <p class="font-display text-4xl font-extrabold" id="sim-balance">$0</p>
+                  <p class="sim-item text-xs font-bold text-brote">👍 Tu rancho va ganando</p>
+                </div>
+                <div class="mt-3 space-y-2">
+                  <div class="sim-item flex items-center justify-between rounded-xl bg-white px-3 py-2.5 text-sm dark:bg-noche-card"><span>⬆️ Venta de becerro</span><strong class="text-brote-700 dark:text-brote">+$9,000</strong></div>
+                  <div class="sim-item flex items-center justify-between rounded-xl bg-white px-3 py-2.5 text-sm dark:bg-noche-card"><span>⬆️ Venta de queso</span><strong class="text-brote-700 dark:text-brote">+$3,500</strong></div>
+                  <div class="sim-item flex items-center justify-between rounded-xl bg-white px-3 py-2.5 text-sm dark:bg-noche-card"><span>⬇️ Alimento</span><strong class="text-red-600 dark:text-red-400">−$2,200</strong></div>
+                  <div class="sim-item flex items-center justify-between rounded-xl bg-white px-3 py-2.5 text-sm dark:bg-noche-card"><span>⬇️ Veterinario</span><strong class="text-red-600 dark:text-red-400">−$1,200</strong></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Barra de pestañas de la app -->
+            <div class="absolute inset-x-0 bottom-0 grid grid-cols-4 border-t border-tierra/10 bg-white/90 px-2 pb-4 pt-2 text-center dark:border-white/10 dark:bg-noche-card">
+              <span class="sim-tab rounded-xl py-1 text-xl">🐄</span><span class="sim-tab rounded-xl py-1 text-xl">⚖️</span><span class="sim-tab rounded-xl py-1 text-xl">🍼</span><span class="sim-tab rounded-xl py-1 text-xl">💰</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CINTA ANIMADA: la cadena del campo ========== -->
+    <div class="overflow-hidden border-b border-tierra/10 bg-trigo-200/70 py-5 dark:border-white/5 dark:bg-noche-card/40" aria-hidden="true">
+      <div class="cinta flex w-max font-display text-2xl font-extrabold text-pradera/70 sm:text-3xl dark:text-trigo/50">
+        <div class="flex gap-12 pr-12"><span>🌧️ Clima</span><span>🌾 Pastura</span><span>🐄 Ganado</span><span>🥛 Leche</span><span>🧀 Queso</span><span>🥩 Carne</span><span>🏙️ Ciudad</span><span>🏭 Industria</span></div>
+        <div class="flex gap-12 pr-12"><span>🌧️ Clima</span><span>🌾 Pastura</span><span>🐄 Ganado</span><span>🥛 Leche</span><span>🧀 Queso</span><span>🥩 Carne</span><span>🏙️ Ciudad</span><span>🏭 Industria</span></div>
+      </div>
+    </div>
+
+    <!-- ========== SIN CAMPO NO HAY CIUDAD ========== -->
+    <section id="campo" class="relative scroll-mt-20 overflow-hidden py-20 sm:py-28">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="reveal mx-auto max-w-3xl text-center">
+          <span class="eyebrow">🌎 Todo empieza en la tierra</span>
+          <h2 class="titulo">Sin campo, <span class="text-atardecer">no hay ciudad.</span></h2>
+          <p class="mt-5 text-lg leading-relaxed text-tierra dark:text-trigo/70">
+            El clima manda en la pastura. La pastura alimenta al ganado. El ganado llena la mesa de millones de familias y mueve a la industria.
+            <strong class="text-pradera dark:text-brote">Cuando al rancho le va bien, a todos nos va bien.</strong>
+          </p>
+        </div>
+
+        <!-- Cadena animada: Clima → Pastura → Ganado → Alimento → Ciudad -->
+        <ol class="mt-14 grid gap-7 md:grid-cols-5 md:gap-4">
+          <li class="eslabon reveal zoom card relative p-6 text-center" style="--d:0ms">
+            <span class="icono-cadena mx-auto grid h-16 w-16 place-items-center rounded-2xl bg-sky-100 text-4xl dark:bg-sky-500/15">🌧️</span>
+            <h3 class="mt-4 font-display text-xl font-extrabold text-pradera dark:text-trigo">Clima</h3>
+            <p class="mt-1 text-sm text-tierra dark:text-trigo/70">Es el que manda: la lluvia y el sol deciden cuánta pastura habrá.</p>
+            <span class="flecha-v absolute -bottom-6 left-1/2 text-2xl text-atardecer md:hidden" aria-hidden="true">↓</span>
+            <span class="flecha-h absolute -right-4 top-1/2 hidden text-2xl text-atardecer md:block" aria-hidden="true">→</span>
+          </li>
+          <li class="eslabon reveal zoom card relative p-6 text-center" style="--d:150ms">
+            <span class="icono-cadena mx-auto grid h-16 w-16 place-items-center rounded-2xl bg-brote/20 text-4xl">🌾</span>
+            <h3 class="mt-4 font-display text-xl font-extrabold text-pradera dark:text-trigo">Pastura</h3>
+            <p class="mt-1 text-sm text-tierra dark:text-trigo/70">El alimento del ganado. Sin buen pasto, no hay buen animal.</p>
+            <span class="flecha-v absolute -bottom-6 left-1/2 text-2xl text-atardecer md:hidden" aria-hidden="true">↓</span>
+            <span class="flecha-h absolute -right-4 top-1/2 hidden text-2xl text-atardecer md:block" aria-hidden="true">→</span>
+          </li>
+          <li class="eslabon reveal zoom card relative p-6 text-center" style="--d:300ms">
+            <span class="icono-cadena mx-auto grid h-16 w-16 place-items-center rounded-2xl bg-tierra/10 text-4xl dark:bg-white/10">🐄</span>
+            <h3 class="mt-4 font-display text-xl font-extrabold text-pradera dark:text-trigo">Ganado</h3>
+            <p class="mt-1 text-sm text-tierra dark:text-trigo/70">Convierte el pasto en leche y carne, con el trabajo diario del ganadero.</p>
+            <span class="flecha-v absolute -bottom-6 left-1/2 text-2xl text-atardecer md:hidden" aria-hidden="true">↓</span>
+            <span class="flecha-h absolute -right-4 top-1/2 hidden text-2xl text-atardecer md:block" aria-hidden="true">→</span>
+          </li>
+          <li class="eslabon reveal zoom card relative p-6 text-center" style="--d:450ms">
+            <span class="icono-cadena mx-auto grid h-16 w-16 place-items-center rounded-2xl bg-atardecer/15 text-4xl">🧀</span>
+            <h3 class="mt-4 font-display text-xl font-extrabold text-pradera dark:text-trigo">Alimento</h3>
+            <p class="mt-1 text-sm text-tierra dark:text-trigo/70">Leche, queso y carne que llegan a tu mesa todos los días.</p>
+            <span class="flecha-v absolute -bottom-6 left-1/2 text-2xl text-atardecer md:hidden" aria-hidden="true">↓</span>
+            <span class="flecha-h absolute -right-4 top-1/2 hidden text-2xl text-atardecer md:block" aria-hidden="true">→</span>
+          </li>
+          <li class="eslabon reveal zoom relative rounded-3xl bg-pradera p-6 text-center text-trigo shadow-xl shadow-pradera/25" style="--d:600ms">
+            <span class="icono-cadena mx-auto grid h-16 w-16 place-items-center rounded-2xl bg-white/15 text-4xl">🏙️</span>
+            <h3 class="mt-4 font-display text-xl font-extrabold">Ciudad e industria</h3>
+            <p class="mt-1 text-sm text-trigo/80">Mercados, restaurantes y fábricas funcionan gracias al campo.</p>
+          </li>
+        </ol>
+
+        <div class="mt-16 grid gap-8 lg:grid-cols-2">
+          <!-- El clima manda: selector de temporada -->
+          <div class="reveal desde-izq card p-7 sm:p-8">
+            <h3 class="font-display text-2xl font-extrabold text-pradera dark:text-trigo">☁️ El clima es el que manda</h3>
+            <p class="mt-1 text-tierra dark:text-trigo/70">Elige la temporada y mira qué cuidar en la pastura y el ganado.</p>
+            <div class="mt-5 grid grid-cols-3 gap-2" id="temporadas" role="group" aria-label="Temporada del año">
+              <button type="button" class="filtro activo !rounded-2xl !py-3" data-temporada="lluvias">🌧️ Lluvias</button>
+              <button type="button" class="filtro !rounded-2xl !py-3" data-temporada="secas">☀️ Secas</button>
+              <button type="button" class="filtro !rounded-2xl !py-3" data-temporada="frio">❄️ Frío</button>
+            </div>
+            <div id="info-temporada" class="mt-5" aria-live="polite"></div>
+          </div>
+
+          <!-- Conectar con la ciudad: ¿qué desayunaste? -->
+          <div class="reveal desde-der rounded-3xl bg-gradient-to-br from-atardecer to-atardecer-700 p-7 text-white shadow-xl shadow-atardecer/25 sm:p-8">
+            <h3 class="font-display text-2xl font-extrabold">🍽️ ¿Qué comiste hoy?</h3>
+            <p class="mt-1 text-white/85">Toca tu desayuno y descubre de dónde viene. Aunque vivas en la ciudad, el campo te alimenta.</p>
+            <div class="mt-5 flex flex-wrap gap-2" id="desayuno">
+              <button type="button" data-comida="leche" class="rounded-2xl bg-white/15 px-4 py-2.5 font-bold transition hover:scale-105 hover:bg-white/25">🥛 Leche</button>
+              <button type="button" data-comida="queso" class="rounded-2xl bg-white/15 px-4 py-2.5 font-bold transition hover:scale-105 hover:bg-white/25">🧀 Queso</button>
+              <button type="button" data-comida="carne" class="rounded-2xl bg-white/15 px-4 py-2.5 font-bold transition hover:scale-105 hover:bg-white/25">🥩 Carne</button>
+              <button type="button" data-comida="tortilla" class="rounded-2xl bg-white/15 px-4 py-2.5 font-bold transition hover:scale-105 hover:bg-white/25">🌽 Tortilla</button>
+              <button type="button" data-comida="huevo" class="rounded-2xl bg-white/15 px-4 py-2.5 font-bold transition hover:scale-105 hover:bg-white/25">🍳 Huevo</button>
+            </div>
+            <div id="info-comida" class="mt-5 rounded-2xl bg-black/15 p-5" aria-live="polite">
+              <p class="text-white/90">👆 Elige algo de tu desayuno.</p>
+            </div>
+            <p class="mt-5 font-display text-lg font-bold">Detrás de cada bocado hay una familia del campo. 🤝</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== LA GANADERÍA EN TU ESTADO ========== -->
+    <section id="estados" class="scroll-mt-20 bg-trigo-200/60 py-20 sm:py-28 dark:bg-noche-card/30">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="reveal mx-auto max-w-3xl text-center">
+          <span class="eyebrow">🇲🇽 La ganadería en México</span>
+          <h2 class="titulo">¿Cómo está la ganadería <span class="text-atardecer">en tu estado?</span></h2>
+          <p class="mt-4 text-lg text-tierra dark:text-trigo/70">Elige tu estado y conoce dónde está, qué se produce, qué problemas tiene, qué apoyos existen y cómo podemos mejorar.</p>
+        </div>
+
+        <div class="reveal mx-auto mt-10 grid max-w-xl gap-3 sm:grid-cols-2">
+          <div>
+            <label class="label" for="sel-pais">País</label>
+            <select id="sel-pais" class="input"><option value="mx">🇲🇽 México</option></select>
+          </div>
+          <div>
+            <label class="label" for="sel-estado">Estado</label>
+            <select id="sel-estado" class="input"></select>
+          </div>
+        </div>
+
+        <div class="mt-10 grid gap-6 lg:grid-cols-3">
+          <!-- Dónde está -->
+          <div class="reveal desde-izq card p-6">
+            <h3 class="font-display text-xl font-extrabold text-pradera dark:text-trigo">📍 ¿Dónde se ubica?</h3>
+            <div id="mapa-regiones" class="mt-4 grid grid-cols-3 gap-1.5 text-center text-[11px] font-bold sm:text-xs" aria-hidden="true">
+              <div class="region" data-region="noroeste">Noroeste</div>
+              <div class="region" data-region="norte">Norte</div>
+              <div class="region" data-region="noreste">Noreste</div>
+              <div class="region" data-region="occidente">Occidente</div>
+              <div class="region" data-region="centro">Centro</div>
+              <div class="region" data-region="golfo">Golfo</div>
+              <div class="region" data-region="pacifico">Pacífico Sur</div>
+              <div class="region col-span-2" data-region="sureste">Sureste</div>
+            </div>
+            <div id="estado-ubicacion" class="mt-5 space-y-3" aria-live="polite"></div>
+          </div>
+
+          <!-- Resultado -->
+          <div class="grid gap-6 sm:grid-cols-2 lg:col-span-2" id="estado-info" aria-live="polite"></div>
+        </div>
+
+        <!-- Alerta nacional -->
+        <div class="reveal mt-8 overflow-hidden rounded-3xl border-2 border-red-200 bg-white p-6 sm:p-8 dark:border-red-500/20 dark:bg-noche-card">
+          <div class="grid gap-6 lg:grid-cols-3">
+            <div>
+              <span class="chip bg-red-100 text-red-700 dark:bg-red-500/15 dark:text-red-300">🚨 ALERTA NACIONAL</span>
+              <h3 class="mt-3 font-display text-2xl font-extrabold text-pradera dark:text-trigo">Gusano barrenador del ganado</h3>
+              <p class="mt-2 text-tierra dark:text-trigo/70">Es la larva de una mosca que se mete en heridas y come tejido vivo. Sin tratamiento puede matar al animal.</p>
+            </div>
+            <ol class="space-y-3 border-l-2 border-red-200 pl-5 text-sm dark:border-red-500/30">
+              <li><strong class="text-pradera dark:text-trigo">Nov 2024:</strong> <span class="text-tierra dark:text-trigo/70">primer caso en Chiapas; EE.UU. frena la compra de ganado mexicano.</span></li>
+              <li><strong class="text-pradera dark:text-trigo">2025:</strong> <span class="text-tierra dark:text-trigo/70">la plaga avanza a Oaxaca y Veracruz; la frontera abre y cierra varias veces.</span></li>
+              <li><strong class="text-pradera dark:text-trigo">Jul 2026:</strong> <span class="text-tierra dark:text-trigo/70">EE.UU. anuncia una reapertura gradual, empezando por Sonora y luego Chihuahua, con inspección animal por animal.</span></li>
+            </ol>
+            <div class="rounded-2xl bg-trigo p-5 dark:bg-noche">
+              <p class="font-display font-extrabold text-pradera dark:text-trigo">¿Qué puedes hacer?</p>
+              <ul class="mt-2 space-y-1.5 text-sm text-tierra dark:text-trigo/80">
+                <li>✓ Revisa y cura heridas, y el ombligo de cada becerro recién nacido.</li>
+                <li>✓ Si ves larvas, avisa a tu veterinario y a Senasica.</li>
+                <li>✓ Mueve ganado solo con arete y guía de movilización.</li>
+                <li>✓ Anota cada caso en el panel de salud de Corral Digital.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <p class="mt-6 text-center text-xs text-tierra/80 dark:text-trigo/50">Información general con fines educativos. Los programas y apoyos cambian cada año: confirma la convocatoria vigente en gob.mx/agricultura, con Senasica o con tu asociación ganadera local.</p>
+      </div>
+    </section>
+
+    <!-- ========== ¿POR QUÉ CAMBIAR? (Gemini la había borrado) ========== -->
+    <section id="por-que" class="scroll-mt-20 bg-trigo-200/60 py-20 sm:py-28 dark:bg-noche-card/30">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="reveal mx-auto max-w-2xl text-center">
+          <span class="eyebrow">🤔 ¿Por qué cambiar?</span>
+          <h2 class="titulo">La libreta te ha servido. <br class="hidden sm:block">Pero tu rancho merece más.</h2>
+        </div>
+
+        <div class="mt-14 grid gap-6 md:grid-cols-2">
+          <div class="reveal desde-izq rounded-3xl border-2 border-dashed border-tierra/25 bg-white/60 p-7 sm:p-9 dark:bg-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-4xl">📓</span>
+              <div><p class="text-sm font-bold uppercase tracking-wider text-tierra/70 dark:text-trigo/50">Antes</p><h3 class="font-display text-2xl font-extrabold text-tierra dark:text-trigo">Con la libreta</h3></div>
+            </div>
+            <ul class="mt-6 space-y-4 text-lg text-tierra dark:text-trigo/80">
+              <li class="flex gap-3"><span class="mt-1 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-red-100 text-sm font-bold text-red-600 dark:bg-red-500/15 dark:text-red-400">✕</span>Se moja, se rompe o se pierde.</li>
+              <li class="flex gap-3"><span class="mt-1 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-red-100 text-sm font-bold text-red-600 dark:bg-red-500/15 dark:text-red-400">✕</span>Las cuentas casi nunca cuadran.</li>
+              <li class="flex gap-3"><span class="mt-1 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-red-100 text-sm font-bold text-red-600 dark:bg-red-500/15 dark:text-red-400">✕</span>No sabes cuánto subió de peso cada animal.</li>
+              <li class="flex gap-3"><span class="mt-1 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-red-100 text-sm font-bold text-red-600 dark:bg-red-500/15 dark:text-red-400">✕</span>Si tú no estás, nadie sabe nada.</li>
+            </ul>
+          </div>
+          <div class="reveal desde-der relative overflow-hidden rounded-3xl bg-pradera p-7 text-trigo shadow-2xl shadow-pradera/25 sm:p-9">
+            <div class="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-brote/30 blur-2xl"></div>
+            <div class="relative flex items-center gap-3">
+              <span class="text-4xl">📱</span>
+              <div><p class="text-sm font-bold uppercase tracking-wider text-brote">Después</p><h3 class="font-display text-2xl font-extrabold">Con Corral Digital</h3></div>
+            </div>
+            <ul class="relative mt-6 space-y-4 text-lg">
+              <li class="flex gap-3"><span class="mt-1 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-brote text-sm font-bold text-white">✓</span>Todo guardado en tu celular.</li>
+              <li class="flex gap-3"><span class="mt-1 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-brote text-sm font-bold text-white">✓</span>Las cuentas se suman solas.</li>
+              <li class="flex gap-3"><span class="mt-1 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-brote text-sm font-bold text-white">✓</span>Ves la ganancia de peso semana a semana.</li>
+              <li class="flex gap-3"><span class="mt-1 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-brote text-sm font-bold text-white">✓</span>Tu familia puede ayudarte a llevarlo.</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3 class="reveal mt-20 text-center font-display text-2xl font-extrabold text-pradera sm:text-3xl dark:text-trigo">Mitos que escuchamos en el rancho 👇</h3>
+        <p class="reveal mt-2 text-center text-tierra dark:text-trigo/70">Toca cada tarjeta para ver la realidad.</p>
+        <div class="mt-10 grid gap-6 md:grid-cols-3">
+          <button type="button" class="mito reveal card p-7 text-left hover:-translate-y-1 hover:shadow-xl" aria-pressed="false" style="--d:0ms">
+            <div class="lado-mito"><span class="chip bg-red-100 text-red-700 dark:bg-red-500/15 dark:text-red-300">MITO</span><p class="mt-4 font-display text-2xl font-bold text-tierra dark:text-trigo">“La tecnología es para los jóvenes.”</p></div>
+            <div class="lado-realidad hidden"><span class="chip bg-brote/25 text-pradera dark:text-brote">REALIDAD ✓</span><p class="mt-4 text-lg font-semibold text-pradera dark:text-trigo">Si sabes mandar un WhatsApp, sabes usar Corral Digital. Botones grandes y palabras del rancho.</p></div>
+            <p class="mt-6 text-sm font-bold text-atardecer-700 dark:text-atardecer"><span class="texto-toggle">Ver la realidad</span> →</p>
+          </button>
+          <button type="button" class="mito reveal card p-7 text-left hover:-translate-y-1 hover:shadow-xl" aria-pressed="false" style="--d:150ms">
+            <div class="lado-mito"><span class="chip bg-red-100 text-red-700 dark:bg-red-500/15 dark:text-red-300">MITO</span><p class="mt-4 font-display text-2xl font-bold text-tierra dark:text-trigo">“Mi libreta funciona bien.”</p></div>
+            <div class="lado-realidad hidden"><span class="chip bg-brote/25 text-pradera dark:text-brote">REALIDAD ✓</span><p class="mt-4 text-lg font-semibold text-pradera dark:text-trigo">Funciona… hasta que se moja o las cuentas no cuadran. Aquí todo se suma solo y no se pierde.</p></div>
+            <p class="mt-6 text-sm font-bold text-atardecer-700 dark:text-atardecer"><span class="texto-toggle">Ver la realidad</span> →</p>
+          </button>
+          <button type="button" class="mito reveal card p-7 text-left hover:-translate-y-1 hover:shadow-xl" aria-pressed="false" style="--d:300ms">
+            <div class="lado-mito"><span class="chip bg-red-100 text-red-700 dark:bg-red-500/15 dark:text-red-300">MITO</span><p class="mt-4 font-display text-2xl font-bold text-tierra dark:text-trigo">“Eso es caro y complicado.”</p></div>
+            <div class="lado-realidad hidden"><span class="chip bg-brote/25 text-pradera dark:text-brote">REALIDAD ✓</span><p class="mt-4 text-lg font-semibold text-pradera dark:text-trigo">Es gratis, se abre desde el navegador y no necesitas instalar nada. Empiezas en un minuto.</p></div>
+            <p class="mt-6 text-sm font-bold text-atardecer-700 dark:text-atardecer"><span class="texto-toggle">Ver la realidad</span> →</p>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN IMPACTO AL CAMPO -->
+    <section id="impacto" class="scroll-mt-20 py-20 sm:py-28">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="reveal mx-auto max-w-3xl text-center">
+          <span class="eyebrow">🌱 Impacto y Tecnología Ganadera</span>
+          <h2 class="titulo">Control de Engorda, Sanidad y Relaciones Familiares</h2>
+          <p class="mt-4 text-lg text-tierra dark:text-trigo/70">
+            Diseñado para llevar un seguimiento riguroso: desde saber si *La Pinta* y su cría *Dulce* están sanas, hasta medir los gramos de carne ganados por semana en el corral de engorda.
+          </p>
+        </div>
+
+        <div class="mt-14 grid gap-8 md:grid-cols-3">
+          <div class="reveal card p-8 sm:p-10 transition-transform hover:-translate-y-2">
+            <span class="text-4xl">⚖️</span>
+            <h3 class="mt-5 font-display text-2xl font-extrabold text-pradera dark:text-trigo">Seguimiento de Peso</h3>
+            <p class="mt-3 text-base text-tierra dark:text-trigo/70">
+              Registra el peso inicial y pesadas periódicas. Monitorea el progreso de ganancia semanal para identificar el momento exacto y óptimo para llevar el ganado al matadero.
+            </p>
+          </div>
+          <div class="reveal card p-8 sm:p-10 transition-transform hover:-translate-y-2" style="--d:150ms">
+            <span class="text-4xl">🩺</span>
+            <h3 class="mt-5 font-display text-2xl font-extrabold text-pradera dark:text-trigo">Control de Salud</h3>
+            <p class="mt-3 text-base text-tierra dark:text-trigo/70">
+              Anota de inmediato si un animal presenta alguna enfermedad o síntoma, guarda el tratamiento aplicado y lleva el estatus de recuperación al día.
+            </p>
+          </div>
+          <div class="reveal card p-8 sm:p-10 transition-transform hover:-translate-y-2" style="--d:300ms">
+            <span class="text-4xl">🐄</span>
+            <h3 class="mt-5 font-display text-2xl font-extrabold text-pradera dark:text-trigo">Vínculo Madre e Hijo</h3>
+            <p class="mt-3 text-base text-tierra dark:text-trigo/70">
+              Conecta la información genealógica básica de tu ganado (ej. la cría asociada a su madre nodriza) para un control genético y productivo impecable.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LA LIBRETA (APP) CON PANEL DETALLADO -->
+    <section id="app" class="scroll-mt-20 py-20 sm:py-28">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="reveal mx-auto max-w-2xl text-center">
+          <span class="eyebrow">📒 Tu panel inteligente</span>
+          <h2 class="titulo">Administra tu ganado a detalle</h2>
+          <p class="mt-4 text-lg text-tierra dark:text-trigo/70">Haz clic en cualquier animal de la lista para abrir su panel individual de pesos, salud y datos.</p>
+        </div>
+
+        <div class="reveal mx-auto mt-10 flex max-w-xl gap-1.5 rounded-3xl bg-trigo-200 p-2 dark:bg-noche-card" role="tablist" aria-label="Secciones de la libreta">
+          <button class="tab-btn" role="tab" id="tab-corral" aria-controls="panel-corral" aria-selected="true" data-tab="corral">🐄 Mi Corral</button>
+          <button class="tab-btn" role="tab" id="tab-partos" aria-controls="panel-partos" aria-selected="false" data-tab="partos">🍼 Partos</button>
+          <button class="tab-btn" role="tab" id="tab-cuentas" aria-controls="panel-cuentas" aria-selected="false" data-tab="cuentas">💰 Cuentas</button>
+        </div>
+
+        <!-- PANEL: MI CORRAL -->
+        <div id="panel-corral" class="tab-panel mt-10" role="tabpanel" aria-labelledby="tab-corral">
+          <div class="grid grid-cols-2 gap-4 lg:grid-cols-4">
+            <div class="card p-6"><p class="text-sm font-semibold text-tierra dark:text-trigo/60">🐄 Total</p><p id="cnt-total" class="mt-2 font-display text-4xl font-extrabold text-pradera dark:text-trigo">0</p></div>
+            <div class="card p-6"><p class="text-sm font-semibold text-tierra dark:text-trigo/60">🥩 En Engorda</p><p id="cnt-engorda" class="mt-2 font-display text-4xl font-extrabold text-atardecer-700 dark:text-atardecer">0</p></div>
+            <div class="card p-6"><p class="text-sm font-semibold text-tierra dark:text-trigo/60">🥛 En Ordeña</p><p id="cnt-ordena" class="mt-2 font-display text-4xl font-extrabold text-brote-700 dark:text-brote">0</p></div>
+            <div class="card p-6"><p class="text-sm font-semibold text-tierra dark:text-trigo/60">🩺 Con Enfermedad</p><p id="cnt-enfermos" class="mt-2 font-display text-4xl font-extrabold text-red-600">0</p></div>
+          </div>
+
+          <div class="mt-8 grid gap-8 lg:grid-cols-5">
+            <form id="form-animal" class="card p-5 sm:p-8 lg:col-span-2" novalidate>
+              <h3 class="font-display text-2xl font-extrabold text-pradera dark:text-trigo">Registrar animal</h3>
+              <p class="mt-1 text-sm text-tierra dark:text-trigo/60">Ideal para control de engorda, leche y vínculos.</p>
+              <div class="mt-6 grid grid-cols-1 gap-5 min-[420px]:grid-cols-2">
+                <div><label class="label" for="a-arete">Arete *</label><input class="input" id="a-arete" placeholder="Ej. MX-001" maxlength="20" autocomplete="off"></div>
+                <div><label class="label" for="a-nombre">Nombre *</label><input class="input" id="a-nombre" placeholder="Ej. La Pinta" maxlength="30" autocomplete="off"></div>
+                <div><label class="label" for="a-sexo">Sexo</label>
+                  <select class="input" id="a-sexo"><option value="hembra">Hembra</option><option value="macho">Macho</option></select></div>
+                <div><label class="label" for="a-raza">Raza *</label><input class="input" id="a-raza" list="lista-razas" placeholder="Ej. Suizo" maxlength="30" autocomplete="off">
+                  <datalist id="lista-razas"><option value="Suizo"><option value="Holstein"><option value="Cebú"><option value="Charolais"><option value="Angus"><option value="Cruza"></datalist></div>
+                <div><label class="label" for="a-estado">Rubro / Estado</label>
+                  <select class="input" id="a-estado">
+                    <option value="engorda">🥩 En Engorda</option>
+                    <option value="ordena">🥛 Producción de Leche</option>
+                    <option value="gestante">🍼 Gestante</option>
+                    <option value="cria">🌱 Cría / Hijo</option>
+                  </select></div>
+                <div><label class="label" for="a-peso">Peso Inicial (kg)</label><input class="input" id="a-peso" type="number" min="1" max="2000" inputmode="numeric" placeholder="Ej. 350"></div>
+                <div class="col-span-2"><label class="label" for="a-madre">Madre / Vaca asociada (opcional)</label><input class="input" id="a-madre" placeholder="Ej. La Pinta (si es la cría Dulce)" maxlength="30" autocomplete="off"></div>
+              </div>
+              <button type="submit" class="btn-verde mt-8 w-full text-lg">＋ Guardar en el corral</button>
+            </form>
+
+            <div class="lg:col-span-3">
+              <div class="card p-5">
+                <label for="buscar" class="sr-only">Buscar animal</label>
+                <div class="relative">
+                  <span class="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-tierra/60">🔍</span>
+                  <input id="buscar" class="input !pl-12" type="search" placeholder="Buscar por arete, nombre o raza…">
+                </div>
+                <div class="mt-4 flex flex-wrap gap-2" id="filtros">
+                  <button type="button" class="filtro activo" data-filtro="todos">Todos</button>
+                  <button type="button" class="filtro" data-filtro="engorda">🥩 Engorda</button>
+                  <button type="button" class="filtro" data-filtro="ordena">🥛 Leche</button>
+                  <button type="button" class="filtro" data-filtro="gestante">🍼 Gestantes</button>
+                  <button type="button" class="filtro" data-filtro="cria">🌱 Crías</button>
+                </div>
+              </div>
+              <div id="lista-animales" class="mt-4 grid gap-4 sm:grid-cols-2"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANEL: PARTOS -->
+        <div id="panel-partos" class="tab-panel mt-10 hidden" role="tabpanel" aria-labelledby="tab-partos">
+          <div class="grid gap-8 lg:grid-cols-2">
+            <form id="form-parto" class="card p-5 sm:p-8" novalidate>
+              <h3 class="font-display text-2xl font-extrabold text-pradera dark:text-trigo">Calculadora de parto</h3>
+              <p class="mt-1 text-tierra dark:text-trigo/60">Promedio de gestación: <strong>283 días</strong>.</p>
+              <div class="mt-6 space-y-5">
+                <div>
+                  <label class="label" for="p-animal">¿Qué vaca?</label>
+                  <select class="input" id="p-animal"><option value="">— Sin seleccionar —</option></select>
+                </div>
+                <div>
+                  <label class="label" for="p-fecha">Fecha de monta o inseminación *</label>
+                  <input class="input" id="p-fecha" type="date">
+                </div>
+              </div>
+              <button type="submit" class="btn-verde mt-8 w-full text-lg">🧮 Calcular fecha probable</button>
+
+              <div id="resultado-parto" class="mt-6 hidden rounded-3xl bg-pradera p-6 text-trigo shadow-lg" aria-live="polite">
+                <p class="text-sm font-semibold text-brote">Fecha probable de parto</p>
+                <p id="r-fecha" class="mt-1 font-display text-3xl font-extrabold"></p>
+                <p id="r-dias" class="mt-2 text-lg font-semibold"></p>
+                <div class="mt-4 h-3.5 overflow-hidden rounded-full bg-white/20"><div id="r-barra" class="barra h-full w-0 rounded-full bg-gradient-to-r from-brote to-atardecer"></div></div>
+                <p id="r-progreso" class="mt-2 text-sm opacity-85"></p>
+                <button type="button" id="btn-guardar-parto" class="btn mt-6 w-full bg-atardecer text-white hover:bg-atardecer-700">📌 Guardar en calendario</button>
+              </div>
+            </form>
+
+            <div class="card p-5 sm:p-8">
+              <h3 class="font-display text-2xl font-extrabold text-pradera dark:text-trigo">Calendario de partos</h3>
+              <div id="lista-partos" class="mt-6 space-y-4"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANEL: CUENTAS -->
+        <div id="panel-cuentas" class="tab-panel mt-10 hidden" role="tabpanel" aria-labelledby="tab-cuentas">
+          <div class="grid gap-4 sm:grid-cols-3">
+            <div class="card p-6"><p class="text-sm font-semibold text-tierra dark:text-trigo/60">⬆️ Entró (Ventas)</p><p id="tot-ingresos" class="mt-2 font-display text-3xl font-extrabold text-brote-700 dark:text-brote">$0.00</p></div>
+            <div class="card p-6"><p class="text-sm font-semibold text-tierra dark:text-trigo/60">⬇️ Salió (Gastos)</p><p id="tot-gastos" class="mt-2 font-display text-3xl font-extrabold text-red-600 dark:text-red-400">$0.00</p></div>
+            <div id="card-balance" class="rounded-3xl bg-pradera p-6 text-white shadow-lg"><p class="text-sm font-semibold opacity-90">⚖️ Balance del rancho</p><p id="tot-balance" class="mt-2 font-display text-3xl font-extrabold">$0.00</p><p id="msg-balance" class="text-sm opacity-90 mt-1">Registra movimientos</p></div>
+          </div>
+
+          <div class="mt-8 grid gap-8 lg:grid-cols-5">
+            <form id="form-mov" class="card min-w-0 p-5 sm:p-8 lg:col-span-2" novalidate>
+              <h3 class="font-display text-2xl font-extrabold text-pradera dark:text-trigo">Registrar Venta o Gasto</h3>
+              <fieldset class="mt-6">
+                <legend class="label">Tipo de movimiento</legend>
+                <div class="grid grid-cols-2 gap-3">
+                  <label class="cursor-pointer"><input type="radio" name="tipo" value="ingreso" class="peer sr-only" checked><span class="block rounded-2xl border-2 border-tierra/15 py-3.5 text-center font-bold transition peer-checked:border-brote-700 peer-checked:bg-brote/15 peer-checked:text-pradera dark:border-white/10 dark:peer-checked:text-brote">⬆️ Venta</span></label>
+                  <label class="cursor-pointer"><input type="radio" name="tipo" value="gasto" class="peer sr-only"><span class="block rounded-2xl border-2 border-tierra/15 py-3.5 text-center font-bold transition peer-checked:border-red-500 peer-checked:bg-red-50 peer-checked:text-red-700 dark:border-white/10 dark:peer-checked:bg-red-500/10 dark:peer-checked:text-red-300">⬇️ Gasto</span></label>
+                </div>
+              </fieldset>
+              <div class="mt-5 space-y-5">
+                <div><label class="label" for="m-concepto">Concepto *</label><input class="input" id="m-concepto" list="lista-conceptos" placeholder="Ej. Venta de ganado gordo" maxlength="40" autocomplete="off">
+                  <datalist id="lista-conceptos"><option value="Venta de ganado gordo"><option value="Venta de leche"><option value="Venta de queso"><option value="Alimento / Forraje de engorda"><option value="Veterinario y Medicinas"><option value="Sal mineral"></datalist></div>
+                <div class="grid grid-cols-1 gap-4 min-[420px]:grid-cols-2">
+                  <div><label class="label" for="m-monto">Monto (MXN) *</label><input class="input" id="m-monto" type="number" min="0.01" step="0.01" inputmode="decimal" placeholder="0.00"></div>
+                  <div><label class="label" for="m-fecha">Fecha *</label><input class="input" id="m-fecha" type="date"></div>
+                </div>
+              </div>
+              <button type="submit" class="btn-verde mt-8 w-full text-lg">💾 Guardar registro</button>
+            </form>
+
+            <div class="space-y-8 lg:col-span-3">
+              <div class="card p-5 sm:p-8">
+                <h3 class="font-display text-xl font-extrabold text-pradera dark:text-trigo">Últimos movimientos</h3>
+                <div id="lista-movs" class="mt-5 space-y-3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODAL DE PANEL INDIVIDUAL DEL ANIMAL (ENGORDA, PESOS, SALUD) -->
+    <div id="modal-animal" class="fixed inset-0 z-[55] hidden items-center justify-center bg-black/60 backdrop-blur-sm p-4 overflow-y-auto" role="dialog" aria-modal="true" aria-labelledby="titulo-modal">
+      <div class="card relative max-w-2xl w-full p-6 sm:p-8 max-h-[90vh] overflow-y-auto bg-white dark:bg-noche-card">
+        <button type="button" id="cerrar-modal" aria-label="Cerrar panel" class="absolute right-5 top-5 z-10 grid h-10 w-10 place-items-center rounded-full bg-trigo text-lg font-bold hover:bg-red-100 hover:text-red-600 dark:bg-noche dark:text-trigo">✕</button>
+        
+        <div id="contenido-modal">
+          <!-- Se inyecta dinámicamente el perfil del animal, su gráfica de peso, dieta de engorda y salud -->
+        </div>
+      </div>
+    </div>
+
+    <!-- JÓVENES -->
+    <section id="puente" class="relative scroll-mt-20 overflow-hidden bg-pradera-900 py-24 text-trigo sm:py-32">
+      <div class="pointer-events-none absolute -left-20 top-10 h-80 w-80 rounded-full bg-brote/20 blur-3xl"></div>
+      <div class="pointer-events-none absolute -right-20 bottom-0 h-96 w-96 rounded-full bg-atardecer/20 blur-3xl"></div>
+      <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:grid lg:grid-cols-2 lg:items-center lg:gap-14 lg:px-8">
+        <div class="reveal">
+          <span class="mb-4 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-sm font-bold text-brote">🌉 Para los jóvenes del campo</span>
+          <h2 class="font-display text-4xl font-extrabold leading-tight tracking-tight sm:text-6xl">
+            Tu papá sabe de ganado.<br>
+            Tú sabes de tecnología.<br>
+            <span class="bg-gradient-to-r from-brote to-atardecer bg-clip-text text-transparent">Juntos, el rancho prospera.</span>
+          </h2>
+          <p class="mt-7 max-w-lg text-lg leading-relaxed text-trigo/80">Lleva el control de pesajes semanales y diagnósticos de salud con la confianza de que los datos de tu familia están seguros.</p>
+          <a id="btn-whatsapp" href="https://wa.me/" target="_blank" rel="noopener" class="btn-accion mt-9 text-lg">
+            📲 Mándaselo a tu familia
+          </a>
+        </div>
+        <div class="mt-12 space-y-5 lg:mt-0">
+          <div class="reveal flex gap-6 rounded-3xl border border-white/10 bg-white/5 p-7 backdrop-blur">
+            <span class="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-brote font-display text-2xl font-extrabold text-white">1</span>
+            <div><h3 class="font-display text-xl font-extrabold">Registra pesadas</h3><p class="mt-1 text-trigo/75">Captura el peso semanal en la engorda para ver la gráfica de progreso.</p></div>
+          </div>
+          <div class="reveal flex gap-6 rounded-3xl border border-white/10 bg-white/5 p-7 backdrop-blur" style="--d:150ms">
+            <span class="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-atardecer font-display text-2xl font-extrabold text-white">2</span>
+            <div><h3 class="font-display text-xl font-extrabold">Controla enfermedades</h3><p class="mt-1 text-trigo/75">Anota tratamientos a tiempo para evitar pérdidas en el ganado.</p></div>
+          </div>
+          <div class="reveal flex gap-6 rounded-3xl border border-white/10 bg-white/5 p-7 backdrop-blur" style="--d:300ms">
+            <span class="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-trigo font-display text-2xl font-extrabold text-pradera">3</span>
+            <div><h3 class="font-display text-xl font-extrabold">Pásales el control</h3><p class="mt-1 text-trigo/75">Hazlo con tu familia, no por ellos. Cuando se sientan seguros, el rancho es suyo; tú acompañas.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="scroll-mt-20 py-24 sm:py-32">
+      <div class="mx-auto grid max-w-6xl gap-14 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+        <div class="reveal">
+          <span class="eyebrow">💬 Hablemos</span>
+          <h2 class="titulo">¿Tienes dudas?<br>Te ayudamos a empezar.</h2>
+          <p class="mt-6 text-lg leading-relaxed text-tierra dark:text-trigo/70">Cuéntanos de tu rancho y cómo podemos mejorar tu panel de control de engorda y salud.</p>
+        </div>
+        <form id="form-contacto" class="reveal card p-5 sm:p-10" novalidate>
+          <div class="space-y-5">
+            <div><label class="label" for="c-nombre">Tu nombre *</label><input class="input" id="c-nombre" placeholder="¿Cómo te llamas?" maxlength="60" autocomplete="name"></div>
+            <div><label class="label" for="c-tel">Teléfono (10 dígitos) *</label><input class="input" id="c-tel" type="tel" inputmode="numeric" placeholder="443 123 4567" maxlength="14" autocomplete="tel"></div>
+            <div><label class="label" for="c-msg">Mensaje *</label><textarea class="input min-h-[130px] resize-y" id="c-msg" placeholder="Cuéntanos de tus animales..." maxlength="500"></textarea></div>
+          </div>
+          <button type="submit" class="btn-accion mt-8 w-full text-lg">Enviar mensaje ✉️</button>
+          <div id="exito-contacto" class="mt-6 hidden rounded-2xl bg-brote/20 p-5 text-center font-semibold text-pradera dark:text-brote" role="status"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-tierra/10 bg-trigo-200/50 py-12 dark:border-white/5 dark:bg-noche-card/50">
+    <div class="mx-auto flex max-w-7xl flex-col items-center gap-6 px-4 text-center sm:px-6 lg:flex-row lg:justify-between lg:text-left lg:px-8">
+      <div>
+        <a href="#inicio" class="inline-flex items-center gap-2.5"><svg class="h-9 w-9" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="14" fill="#1E1712"/><rect x="1" y="1" width="46" height="46" rx="13" fill="none" stroke="#E67E22" stroke-opacity=".25"/><g fill="url(#fierro-calor)" stroke="url(#fierro-calor)" stroke-linecap="round" stroke-linejoin="round" filter="url(#fierro-brillo)"><path fill="none" d="M12 12 V37.5 H36" stroke-width="3.3"/><path fill="none" d="M12 12 c0 -3.4 -3.6 -4.6 -5.6 -2" stroke-width="2.6"/><path fill="none" d="M36 37.5 c3.2 0 4.4 -3.6 2 -5.6" stroke-width="2.6"/><path fill="none" d="M21 11.5 V33 M21 11.5 H28.3 a5 5 0 0 1 0 10.2 H21 M21 21.7 H29.4 a5.65 5.65 0 0 1 0 11.3 H21" stroke-width="3"/><circle cx="6.4" cy="10" r="1.6" stroke="none"/><circle cx="38" cy="31.9" r="1.6" stroke="none"/></g></svg><span class="font-display text-lg font-extrabold text-pradera dark:text-trigo">Corral<span class="text-atardecer">Digital</span></span></a>
+        <p class="mt-2 text-sm text-tierra dark:text-trigo/60">La libreta de tu rancho, ahora en tu celular.</p>
+      </div>
+      <p class="text-sm font-semibold text-tierra dark:text-trigo/70">Hecho con orgullo por <span class="text-pradera dark:text-brote">Ana Bazán</span> — del corral al código 🐄💻</p>
+      <p class="text-xs text-tierra/70 dark:text-trigo/40">© <span id="anio">2026</span> Corral Digital · Tecnolochicas TC PRO</p>
+    </div>
+  </footer>
+
+  <div id="toasts" class="pointer-events-none fixed inset-x-0 bottom-6 z-[60] flex flex-col items-center gap-2 px-4" aria-live="polite"></div>
+
+  <!-- SCRIPT CON LA LÓGICA DE PANEL, PESOS, SALUD Y FAMILIA -->
+  <script>
+    /* =========================================================
+       UTILIDADES
+       ========================================================= */
+    const $  = (sel) => document.querySelector(sel);
+    const $$ = (sel) => document.querySelectorAll(sel);
+
+    // Guardado seguro en localStorage (si falla, la página sigue funcionando)
+    const almacen = {
+      leer(clave, porDefecto) {
+        try { const v = localStorage.getItem(clave); return v ? JSON.parse(v) : porDefecto; }
+        catch (e) { return porDefecto; }
+      },
+      guardar(clave, valor) {
+        try { localStorage.setItem(clave, JSON.stringify(valor)); } catch (e) {}
+      }
+    };
+
+    // Evita que lo que escribe el usuario se lea como HTML (seguridad XSS)
+    const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    const nuevoId = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
+    const pesos = (n) => new Intl.NumberFormat('es-MX', { style: 'currency', currency: 'MXN' }).format(n);
+
+    // FECHAS — CORRECCIÓN: new Date('2026-10-01') se lee en hora UTC y en México
+    // se mostraba un día antes. aFecha() arma la fecha en hora LOCAL.
+    const aFecha = (iso) => { const [a, m, d] = String(iso).split('-').map(Number); return new Date(a, m - 1, d); };
+    const aISO = (fecha) => { const f = new Date(fecha); f.setMinutes(f.getMinutes() - f.getTimezoneOffset()); return f.toISOString().slice(0, 10); };
+    const hoy = () => { const h = new Date(); return new Date(h.getFullYear(), h.getMonth(), h.getDate()); };
+    const sumarDias = (fecha, dias) => { const f = new Date(fecha); f.setDate(f.getDate() + dias); return f; };
+    const diasEntre = (desde, hasta) => Math.round((hasta - desde) / 86400000);
+    const fechaLarga = (iso) => aFecha(iso).toLocaleDateString('es-MX', { day: 'numeric', month: 'short', year: 'numeric' });
+    const DIAS_GESTACION = 283;
+    const META_MATADERO = 550; // kg, meta orientativa para engorda
+
+    // Notificación flotante
+    function avisar(mensaje, tipo = 'ok') {
+      const colores = tipo === 'error' ? 'bg-red-600 text-white' : 'bg-pradera text-trigo dark:bg-brote dark:text-noche';
+      const t = document.createElement('div');
+      t.className = `toast pointer-events-auto max-w-md rounded-2xl px-5 py-3.5 font-semibold shadow-2xl ${colores}`;
+      t.textContent = mensaje;
+      $('#toasts').appendChild(t);
+      requestAnimationFrame(() => t.classList.add('show'));
+      setTimeout(() => { t.classList.remove('show'); setTimeout(() => t.remove(), 300); }, 3200);
+    }
+
+    // Marca un campo con error (vibra), le da foco y avisa amablemente
+    function errorEn(campo, mensaje) {
+      campo.classList.remove('campo-error');
+      void campo.offsetWidth; // reinicia la animación de vibrar
+      campo.classList.add('campo-error');
+      campo.focus();
+      avisar(mensaje, 'error');
+      return false;
+    }
+    document.addEventListener('input', (e) => e.target.classList && e.target.classList.remove('campo-error'));
+
+    // ANIMACIÓN: números que cuentan desde el valor anterior hasta el nuevo
+    function contar(el, valor, formato = (n) => Math.round(n).toLocaleString('es-MX')) {
+      const desde = Number(el.dataset.valor || 0);
+      el.dataset.valor = valor;
+      if (desde === valor || window.matchMedia('(prefers-reduced-motion: reduce)').matches) { el.textContent = formato(valor); return; }
+      const inicio = performance.now(), duracion = 700;
+      const paso = (t) => {
+        const p = Math.min(1, (t - inicio) / duracion);
+        const suave = 1 - Math.pow(1 - p, 3);
+        el.textContent = formato(desde + (valor - desde) * suave);
+        if (p < 1) requestAnimationFrame(paso);
+      };
+      requestAnimationFrame(paso);
+    }
+
+    /* =========================================================
+       DATOS
+       ========================================================= */
+    let animales    = almacen.leer('cd_animales', []);
+    let partos      = almacen.leer('cd_partos', []);
+    let movimientos = almacen.leer('cd_movimientos', []);
+
+    // CORRECCIÓN: animales guardados con la versión anterior tenían "peso" pero no
+    // "pesajes" ni "madre". Eso mostraba "undefined" y rompía "Guardar pesada".
+    // Aquí se completan los datos que falten para que todo sea compatible.
+    animales = animales.map((a) => ({
+      ...a,
+      madre: a.madre || 'Sin registrar',
+      salud: Array.isArray(a.salud) ? a.salud : [],
+      pesajes: Array.isArray(a.pesajes) && a.pesajes.length ? a.pesajes
+        : (a.peso ? [{ fecha: aISO(new Date()), peso: Number(a.peso) }] : [])
+    }));
+
+    const guardarTodo = () => {
+      almacen.guardar('cd_animales', animales);
+      almacen.guardar('cd_partos', partos);
+      almacen.guardar('cd_movimientos', movimientos);
+    };
+
+    const ESTADOS = {
+      engorda:  { texto: '🥩 Engorda',  clase: 'bg-atardecer/15 text-atardecer-700 dark:text-atardecer' },
+      ordena:   { texto: '🥛 Leche',    clase: 'bg-brote/20 text-pradera dark:text-brote' },
+      gestante: { texto: '🍼 Gestante', clase: 'bg-sky-100 text-sky-700 dark:bg-sky-500/15 dark:text-sky-300' },
+      cria:     { texto: '🌱 Cría',     clase: 'bg-tierra/10 text-tierra dark:bg-white/10 dark:text-trigo' }
+    };
+    // CORRECCIÓN: si un animal traía un estado desconocido, ESTADOS[x] era undefined y la lista tronaba
+    const estadoDe = (a) => ESTADOS[a.estado] || ESTADOS.engorda;
+
+    // Pesajes siempre ordenados por fecha
+    const pesajesOrdenados = (a) => [...(a.pesajes || [])].sort((x, y) => aFecha(x.fecha) - aFecha(y.fecha));
+    const pesoActual = (a) => { const p = pesajesOrdenados(a); return p.length ? p[p.length - 1].peso : null; };
+    function gananciaSemanal(a) {
+      const p = pesajesOrdenados(a);
+      if (p.length < 2) return null;
+      const dias = Math.max(1, diasEntre(aFecha(p[0].fecha), aFecha(p[p.length - 1].fecha)));
+      return ((p[p.length - 1].peso - p[0].peso) / dias) * 7;
+    }
+
+    /* =========================================================
+       NAVBAR, MENÚ Y MODO OSCURO
+       ========================================================= */
+    const navbar = $('#navbar');
+    const alHacerScroll = () => {
+      const bajo = window.scrollY > 20;
+      ['bg-trigo/90', 'dark:bg-noche/90', 'backdrop-blur-xl', 'shadow-sm'].forEach((c) => navbar.classList.toggle(c, bajo));
+    };
+    window.addEventListener('scroll', alHacerScroll, { passive: true });
+    alHacerScroll();
+
+    const btnMenu = $('#btn-menu');
+    const menuMovil = $('#menu-movil');
+    const abrirMenu = (abrir) => {
+      menuMovil.classList.toggle('hidden', !abrir);
+      btnMenu.setAttribute('aria-expanded', String(abrir));
+      btnMenu.setAttribute('aria-label', abrir ? 'Cerrar menú' : 'Abrir menú');
+      $('#icono-menu').setAttribute('d', abrir ? 'M6 6l12 12M18 6L6 18' : 'M4 7h16M4 12h16M4 17h16');
+    };
+    btnMenu.addEventListener('click', () => abrirMenu(menuMovil.classList.contains('hidden')));
+    $$('.enlace-movil').forEach((a) => a.addEventListener('click', () => abrirMenu(false)));
+
+    const btnTema = $('#btn-tema');
+    const etiquetaTema = () => btnTema.setAttribute('aria-label', document.documentElement.classList.contains('dark') ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro');
+    btnTema.addEventListener('click', () => {
+      const oscuro = document.documentElement.classList.toggle('dark');
+      try { localStorage.setItem('cd_tema', oscuro ? 'oscuro' : 'claro'); } catch (e) {}
+      etiquetaTema();
+    });
+    etiquetaTema();
+
+    /* =========================================================
+       SIN CAMPO NO HAY CIUDAD: temporadas y desayuno
+       ========================================================= */
+    const TEMPORADAS = {
+      lluvias: {
+        titulo: '🌧️ Temporada de lluvias', meses: 'Aprox. junio a octubre',
+        pastura: 'Pastura abundante y verde. Es la mejor época para el ganado.',
+        alimento: 'Aprovecha el pasto que sobra: ensila o haz pacas para guardar comida para las secas.',
+        cuidado: 'Ojo con garrapatas, moscas y cojeras por el lodo. Revisa pezuñas y desparasita con tu veterinario.'
+      },
+      secas: {
+        titulo: '☀️ Temporada de secas', meses: 'Aprox. febrero a mayo',
+        pastura: 'El pasto se seca y escasea. Aquí se nota quién guardó alimento.',
+        alimento: 'Complementa con ensilado, pacas o rastrojo. Sal mineral siempre a la mano.',
+        cuidado: 'Agua limpia y sombra todo el día. Cuida que no bajen de peso y vigila golpes de calor.'
+      },
+      frio: {
+        titulo: '❄️ Temporada de frío', meses: 'Aprox. noviembre a enero',
+        pastura: 'El pasto crece lento y las heladas lo queman.',
+        alimento: 'Dales más energía (grano o melaza) para que aguanten el frío, siempre con asesoría.',
+        cuidado: 'Protege a las crías del viento y la humedad. Vigila tos y mocos: pueden ser neumonía.'
+      }
+    };
+    function mostrarTemporada(clave) {
+      const t = TEMPORADAS[clave];
+      $$('[data-temporada]').forEach((b) => b.classList.toggle('activo', b.dataset.temporada === clave));
+      $('#info-temporada').innerHTML = `
+        <div class="cambia space-y-3">
+          <div class="flex items-baseline justify-between gap-2"><p class="font-display text-xl font-extrabold text-pradera dark:text-trigo">${t.titulo}</p><p class="shrink-0 text-xs font-semibold text-tierra dark:text-trigo/60">${t.meses}</p></div>
+          <div class="rounded-2xl bg-brote/15 p-4"><p class="text-sm font-bold text-pradera dark:text-brote">🌾 Pastura</p><p class="text-tierra dark:text-trigo/80">${t.pastura}</p></div>
+          <div class="rounded-2xl bg-atardecer/10 p-4"><p class="text-sm font-bold text-atardecer-700 dark:text-atardecer">🥣 Alimento</p><p class="text-tierra dark:text-trigo/80">${t.alimento}</p></div>
+          <div class="rounded-2xl bg-sky-100/70 p-4 dark:bg-sky-500/10"><p class="text-sm font-bold text-sky-700 dark:text-sky-300">🩺 Cuidado del ganado</p><p class="text-tierra dark:text-trigo/80">${t.cuidado}</p></div>
+        </div>`;
+    }
+    $('#temporadas').addEventListener('click', (e) => { const b = e.target.closest('[data-temporada]'); if (b) mostrarTemporada(b.dataset.temporada); });
+    // Abre en la temporada actual según el mes
+    const mes = new Date().getMonth() + 1;
+    mostrarTemporada(mes >= 6 && mes <= 10 ? 'lluvias' : mes >= 2 && mes <= 5 ? 'secas' : 'frio');
+
+    const COMIDAS = {
+      leche:    '🥛 Antes de llegar a tu vaso, una vaca comió pastura y alguien la ordeñó de madrugada en un rancho.',
+      queso:    '🧀 Para un kilo de queso fresco se necesitan unos 8 a 10 litros de leche. ¡Mucho trabajo en cada pedazo!',
+      carne:    '🥩 Un becerro tarda más de un año en crecer: pastura, agua, vacunas y cuidados diarios.',
+      tortilla: '🌽 El maíz depende de la lluvia. Si el temporal falla, se siente en el precio de la tortilla en toda la ciudad.',
+      huevo:    '🍳 Las gallinas comen maíz y sorgo del campo. Si sube el grano, sube el huevo.'
+    };
+    $('#desayuno').addEventListener('click', (e) => {
+      const b = e.target.closest('[data-comida]');
+      if (!b) return;
+      $$('[data-comida]').forEach((x) => x.classList.toggle('!bg-white', x === b));
+      $$('[data-comida]').forEach((x) => x.classList.toggle('!text-atardecer-700', x === b));
+      $('#info-comida').innerHTML = `<p class="cambia text-lg font-semibold leading-relaxed">${COMIDAS[b.dataset.comida]}</p>`;
+    });
+
+    /* =========================================================
+       MITOS: tocar para voltear
+       ========================================================= */
+    $$('.mito').forEach((tarjeta) => tarjeta.addEventListener('click', () => {
+      const volteada = tarjeta.getAttribute('aria-pressed') === 'true';
+      tarjeta.setAttribute('aria-pressed', String(!volteada));
+      tarjeta.querySelector('.lado-mito').classList.toggle('hidden', !volteada);
+      const real = tarjeta.querySelector('.lado-realidad');
+      real.classList.toggle('hidden', volteada);
+      real.classList.toggle('cambia', !volteada);
+      tarjeta.querySelector('.texto-toggle').textContent = volteada ? 'Ver la realidad' : 'Ver el mito';
+      tarjeta.classList.toggle('ring-4', !volteada);
+      tarjeta.classList.toggle('ring-brote/40', !volteada);
+    }));
+
+    /* =========================================================
+       PESTAÑAS
+       ========================================================= */
+    function mostrarTab(nombre) {
+      $$('.tab-btn').forEach((b) => b.setAttribute('aria-selected', String(b.dataset.tab === nombre)));
+      $$('.tab-panel').forEach((p) => p.classList.toggle('hidden', p.id !== `panel-${nombre}`));
+    }
+    $$('.tab-btn').forEach((b) => b.addEventListener('click', () => mostrarTab(b.dataset.tab)));
+    $$('[data-ir-tab]').forEach((a) => a.addEventListener('click', () => mostrarTab(a.dataset.irTab)));
+
+    /* =========================================================
+       MI CORRAL
+       ========================================================= */
+    $('#form-animal').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const arete = $('#a-arete'), nombre = $('#a-nombre'), raza = $('#a-raza'), peso = $('#a-peso'), madre = $('#a-madre');
+      if (!arete.value.trim()) return errorEn(arete, 'Falta el número de arete 🏷️');
+      if (!nombre.value.trim()) return errorEn(nombre, 'Ponle nombre a tu animal 🐄');
+      if (!raza.value.trim()) return errorEn(raza, 'Escribe o elige la raza');
+      if (animales.some((a) => a.arete.toLowerCase() === arete.value.trim().toLowerCase()))
+        return errorEn(arete, 'Ya existe un animal con ese arete');
+      // CORRECCIÓN: antes, si no ponías peso, se inventaba 300 kg. Ahora se valida.
+      const kilos = peso.value === '' ? null : Number(peso.value);
+      if (kilos !== null && (isNaN(kilos) || kilos <= 0 || kilos > 2000)) return errorEn(peso, 'El peso debe estar entre 1 y 2000 kg');
+
+      animales.unshift({
+        id: nuevoId(),
+        arete: arete.value.trim().toUpperCase(),
+        nombre: nombre.value.trim(),
+        sexo: $('#a-sexo').value,
+        raza: raza.value.trim(),
+        estado: $('#a-estado').value,
+        madre: madre.value.trim() || 'Sin registrar',
+        pesajes: kilos ? [{ fecha: aISO(new Date()), peso: kilos }] : [],
+        salud: []
+      });
+      guardarTodo();
+      e.target.reset();
+      renderTodo();
+      avisar(`¡${animales[0].nombre} ya está en tu corral! 🎉`);
+      arete.focus();
+    });
+
+    let filtroActual = 'todos';
+    $('#buscar').addEventListener('input', renderCorral);
+    $('#filtros').addEventListener('click', (e) => {
+      const btn = e.target.closest('[data-filtro]');
+      if (!btn) return;
+      filtroActual = btn.dataset.filtro;
+      $$('#filtros .filtro').forEach((f) => f.classList.toggle('activo', f === btn));
+      renderCorral();
+    });
+
+    $('#lista-animales').addEventListener('click', (e) => {
+      if (e.target.closest('[data-ejemplo]')) return cargarEjemplo();
+      const tarjeta = e.target.closest('[data-id-animal]');
+      if (!tarjeta) return;
+      const id = tarjeta.dataset.idAnimal;
+      if (e.target.closest('[data-borrar-animal]')) {
+        const animal = animales.find((a) => a.id === id);
+        if (animal && confirm(`¿Seguro que deseas quitar a ${animal.nombre} del corral?`)) {
+          animales = animales.filter((a) => a.id !== id);
+          partos = partos.filter((p) => p.animalId !== id);
+          guardarTodo();
+          renderTodo();
+          avisar(`${animal.nombre} se quitó del corral`);
+        }
+        return;
+      }
+      abrirPanelAnimal(id);
+    });
+    // Abrir la tarjeta también con teclado (Enter / Espacio)
+    $('#lista-animales').addEventListener('keydown', (e) => {
+      const tarjeta = e.target.closest('[data-id-animal]');
+      if (tarjeta && e.target === tarjeta && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); abrirPanelAnimal(tarjeta.dataset.idAnimal); }
+    });
+
+    function renderCorral() {
+      contar($('#cnt-total'), animales.length);
+      contar($('#cnt-engorda'), animales.filter((a) => a.estado === 'engorda').length);
+      contar($('#cnt-ordena'), animales.filter((a) => a.estado === 'ordena').length);
+      contar($('#cnt-enfermos'), animales.filter((a) => (a.salud || []).length > 0).length);
+
+      const contenedor = $('#lista-animales');
+      if (animales.length === 0) {
+        contenedor.innerHTML = `
+          <div class="entra card col-span-full p-12 text-center">
+            <p class="flota inline-block text-6xl">🐄</p>
+            <p class="mt-4 font-display text-2xl font-extrabold text-pradera dark:text-trigo">Tu corral está vacío</p>
+            <p class="mt-2 text-tierra dark:text-trigo/60">Registra tu primer animal o mira cómo se vería con un ejemplo.</p>
+            <button type="button" data-ejemplo class="btn-fantasma mt-6">✨ Cargar rancho de ejemplo</button>
+          </div>`;
+        return;
+      }
+
+      const texto = $('#buscar').value.trim().toLowerCase();
+      const lista = animales.filter((a) =>
+        (filtroActual === 'todos' || a.estado === filtroActual) &&
+        (!texto || a.arete.toLowerCase().includes(texto) || a.nombre.toLowerCase().includes(texto) || a.raza.toLowerCase().includes(texto))
+      );
+
+      // CORRECCIÓN: antes, si la búsqueda no encontraba nada, la lista quedaba en blanco sin explicación
+      if (lista.length === 0) {
+        contenedor.innerHTML = `<div class="entra card col-span-full p-8 text-center text-tierra dark:text-trigo/60">No encontramos animales con esa búsqueda 🔍</div>`;
+        return;
+      }
+
+      contenedor.innerHTML = lista.map((a, i) => {
+        const peso = pesoActual(a);
+        const enfermo = (a.salud || []).length > 0;
+        const est = estadoDe(a);
+        return `
+          <article data-id-animal="${a.id}" tabindex="0" role="button" aria-label="Abrir panel de ${esc(a.nombre)}" style="--d:${Math.min(i, 8) * 60}ms"
+            class="entra card group flex cursor-pointer flex-col justify-between p-5 hover:-translate-y-1 hover:shadow-lg focus:outline-none focus-visible:ring-4 focus-visible:ring-brote/50">
+            <div class="flex items-start gap-4">
+              <span class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-trigo text-2xl shadow-sm transition-transform group-hover:rotate-[-8deg] group-hover:scale-110 dark:bg-noche">${a.sexo === 'macho' ? '🐂' : '🐄'}</span>
+              <div class="min-w-0 flex-1">
+                <div class="flex flex-wrap items-center gap-2">
+                  <h4 class="truncate font-display text-lg font-extrabold text-pradera dark:text-trigo">${esc(a.nombre)}</h4>
+                  <span class="chip ${est.clase}">${est.texto}</span>
+                </div>
+                <p class="mt-0.5 text-xs font-semibold text-tierra dark:text-trigo/60">🏷️ ${esc(a.arete)} · ${esc(a.raza)}</p>
+                <p class="text-xs text-tierra/80 dark:text-trigo/50">Peso actual: <strong>${peso ? peso.toLocaleString('es-MX') + ' kg' : 'Sin pesar'}</strong></p>
+                ${enfermo ? '<span class="mt-1 inline-block rounded-full bg-red-100 px-2 py-0.5 text-[10px] font-bold text-red-700 dark:bg-red-500/15 dark:text-red-300">⚠️ Atención médica</span>' : ''}
+              </div>
+              <button type="button" data-borrar-animal class="grid h-9 w-9 shrink-0 place-items-center rounded-xl text-tierra/50 transition hover:bg-red-50 hover:text-red-600 dark:hover:bg-red-500/10" aria-label="Quitar a ${esc(a.nombre)}">✕</button>
+            </div>
+            <div class="mt-4 flex items-center justify-between gap-2 border-t border-tierra/10 pt-3 text-xs font-bold text-atardecer dark:border-white/5">
+              <span class="transition-transform group-hover:translate-x-1">Abrir panel →</span>
+              <span class="truncate text-tierra/50 dark:text-trigo/40">Madre: ${esc(a.madre)}</span>
+            </div>
+          </article>`;
+      }).join('');
+    }
+
+    /* =========================================================
+       PANEL INDIVIDUAL (MODAL)
+       ========================================================= */
+    let idAnimalActivo = null;
+    const modal = $('#modal-animal');
+
+    function abrirPanelAnimal(id) {
+      const a = animales.find((x) => x.id === id);
+      if (!a) return;
+      idAnimalActivo = id;
+      const est = estadoDe(a);
+      const pesajes = pesajesOrdenados(a);
+      const pInicial = pesajes.length ? pesajes[0].peso : null;
+      const pAct = pesoActual(a);
+      const ganancia = gananciaSemanal(a);
+      const progreso = pAct ? Math.min(100, Math.round((pAct / META_MATADERO) * 100)) : 0;
+      const faltanKg = pAct ? Math.max(0, META_MATADERO - pAct) : null;
+      const semanas = ganancia && ganancia > 0 && faltanKg ? Math.ceil(faltanKg / ganancia) : null;
+
+      $('#contenido-modal').innerHTML = `
+        <div class="flex items-center gap-4 pr-10">
+          <span class="grid h-16 w-16 shrink-0 place-items-center rounded-2xl bg-trigo text-4xl dark:bg-noche">${a.sexo === 'macho' ? '🐂' : '🐄'}</span>
+          <div class="min-w-0">
+            <div class="flex flex-wrap items-center gap-2">
+              <h3 id="titulo-modal" class="font-display text-2xl font-extrabold text-pradera dark:text-trigo">${esc(a.nombre)}</h3>
+              <span class="chip ${est.clase}">${est.texto}</span>
+            </div>
+            <p class="text-sm font-semibold text-tierra dark:text-trigo/60">🏷️ ${esc(a.arete)} · ${esc(a.raza)} · ${a.sexo === 'macho' ? 'Macho' : 'Hembra'}</p>
+            <p class="text-xs text-tierra/80 dark:text-trigo/50">Madre: <strong>${esc(a.madre)}</strong></p>
+          </div>
+        </div>
+
+        <div class="mt-6 grid grid-cols-3 gap-3">
+          <div class="rounded-2xl bg-trigo p-4 text-center dark:bg-noche"><p class="text-xs font-semibold text-tierra dark:text-trigo/60">Peso inicial</p><p class="mt-1 font-display text-xl font-bold">${pInicial ? pInicial + ' kg' : '—'}</p></div>
+          <div class="rounded-2xl bg-trigo p-4 text-center dark:bg-noche"><p class="text-xs font-semibold text-tierra dark:text-trigo/60">Peso actual</p><p class="mt-1 font-display text-xl font-bold text-brote-700 dark:text-brote">${pAct ? pAct + ' kg' : '—'}</p></div>
+          <div class="rounded-2xl bg-trigo p-4 text-center dark:bg-noche"><p class="text-xs font-semibold text-tierra dark:text-trigo/60">Gana por semana</p><p class="mt-1 font-display text-xl font-bold ${ganancia !== null && ganancia < 0 ? 'text-red-600' : 'text-atardecer'}">${ganancia === null ? '—' : (ganancia >= 0 ? '+' : '') + ganancia.toFixed(1) + ' kg'}</p></div>
+        </div>
+        ${ganancia === null ? '<p class="mt-2 text-xs text-tierra/70 dark:text-trigo/50">Registra al menos 2 pesadas para calcular la ganancia.</p>' : ''}
+
+        ${a.estado === 'engorda' ? `
+          <div class="mt-6 rounded-3xl bg-trigo p-5 dark:bg-noche">
+            <h4 class="font-display font-extrabold text-pradera dark:text-trigo">🥩 Camino a la venta</h4>
+            <p class="mt-1 text-xs text-tierra dark:text-trigo/70">Meta orientativa de ${META_MATADERO} kg. ${semanas ? `A este ritmo le faltan unas <strong>${semanas} semanas</strong>.` : faltanKg === 0 ? '<strong>¡Ya alcanzó la meta!</strong>' : ''}</p>
+            <div class="mt-4 flex justify-between text-xs font-bold"><span>Avance</span><span>${progreso}%</span></div>
+            <div class="mt-1 h-3 overflow-hidden rounded-full bg-tierra/15"><div id="barra-meta" class="barra h-full w-0 rounded-full bg-gradient-to-r from-brote to-atardecer"></div></div>
+          </div>` : ''}
+
+        <div class="mt-6 grid gap-5 sm:grid-cols-2">
+          <form id="form-nuevo-peso" class="rounded-3xl border border-tierra/10 p-5 dark:border-white/10" novalidate>
+            <h4 class="font-display font-bold text-pradera dark:text-trigo">⚖️ Nueva pesada</h4>
+            <div class="mt-3 space-y-3">
+              <div><label class="label text-xs" for="np-fecha">Fecha</label><input class="input !py-2 !text-sm" id="np-fecha" type="date"></div>
+              <div><label class="label text-xs" for="np-peso">Peso (kg)</label><input class="input !py-2 !text-sm" id="np-peso" type="number" min="1" max="2000" inputmode="numeric" placeholder="Ej. 410"></div>
+              <button type="submit" class="btn-verde w-full !py-2.5 !text-sm">Guardar pesada</button>
+            </div>
+          </form>
+          <form id="form-salud" class="rounded-3xl border border-tierra/10 p-5 dark:border-white/10" novalidate>
+            <h4 class="font-display font-bold text-pradera dark:text-trigo">🩺 Salud</h4>
+            <div class="mt-3 space-y-3">
+              <div><label class="label text-xs" for="s-enfermedad">Enfermedad o síntoma</label><input class="input !py-2 !text-sm" id="s-enfermedad" placeholder="Ej. Cojera" maxlength="40"></div>
+              <div><label class="label text-xs" for="s-tratamiento">Tratamiento</label><input class="input !py-2 !text-sm" id="s-tratamiento" placeholder="Ej. Lo que indicó el veterinario" maxlength="60"></div>
+              <button type="submit" class="btn-accion w-full !py-2.5 !text-sm">Registrar</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="mt-6 grid gap-5 sm:grid-cols-2">
+          <div>
+            <h4 class="font-display font-bold text-pradera dark:text-trigo">📋 Pesadas</h4>
+            <div class="mt-2 max-h-44 space-y-2 overflow-y-auto">
+              ${pesajes.length ? [...pesajes].reverse().map((p) => `<div class="flex items-center justify-between rounded-xl bg-trigo px-4 py-2 text-sm dark:bg-noche"><span>📅 ${fechaLarga(p.fecha)}</span><strong class="text-brote-700 dark:text-brote">${p.peso} kg</strong></div>`).join('') : '<p class="text-sm text-tierra/70 dark:text-trigo/50">Sin pesadas todavía.</p>'}
+            </div>
+          </div>
+          <div>
+            <h4 class="font-display font-bold text-pradera dark:text-trigo">🩺 Historial de salud</h4>
+            <div class="mt-2 max-h-44 space-y-2 overflow-y-auto">
+              ${(a.salud || []).length ? [...a.salud].reverse().map((s, i) => `
+                <div class="relative rounded-xl border border-red-200 bg-red-50 p-3 pr-10 text-sm text-red-700 dark:border-red-500/20 dark:bg-red-500/10 dark:text-red-300">
+                  <strong>⚠️ ${esc(s.enfermedad)}</strong><br><small>${esc(s.tratamiento)} · ${fechaLarga(s.fecha)}</small>
+                  <button type="button" data-sano="${a.salud.length - 1 - i}" class="absolute right-2 top-2 rounded-lg px-2 py-1 text-xs font-bold hover:bg-red-100 dark:hover:bg-red-500/20" title="Marcar como sano">✓</button>
+                </div>`).join('') : '<p class="text-sm text-tierra/70 dark:text-trigo/50">¡Sano! Sin incidencias. 💚</p>'}
+            </div>
+          </div>
+        </div>`;
+
+      $('#np-fecha').value = aISO(new Date());
+      if (!modal.classList.contains('flex')) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        document.body.style.overflow = 'hidden'; // que no se mueva la página de atrás
+        setTimeout(() => $('#cerrar-modal').focus(), 50);
+      }
+      // ANIMACIÓN: la barra de meta se llena
+      const barra = $('#barra-meta');
+      if (barra) requestAnimationFrame(() => requestAnimationFrame(() => { barra.style.width = progreso + '%'; }));
+    }
+
+    function cerrarModal() {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.style.overflow = '';
+      const tarjeta = document.querySelector(`[data-id-animal="${idAnimalActivo}"]`);
+      if (tarjeta) tarjeta.focus({ preventScroll: true });
+      idAnimalActivo = null;
+    }
+    // CORRECCIÓN: antes solo cerraba con la X. Ahora también con clic afuera o tecla Esc.
+    $('#cerrar-modal').addEventListener('click', cerrarModal);
+    modal.addEventListener('click', (e) => { if (e.target === modal) cerrarModal(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && modal.classList.contains('flex')) cerrarModal(); });
+
+    // Formularios del modal (delegación, porque el contenido se vuelve a dibujar)
+    $('#contenido-modal').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const animal = animales.find((a) => a.id === idAnimalActivo);
+      if (!animal) return;
+
+      if (e.target.id === 'form-nuevo-peso') {
+        const fecha = $('#np-fecha'), peso = $('#np-peso');
+        const kilos = Number(peso.value);
+        if (!fecha.value) return errorEn(fecha, 'Elige la fecha de la pesada');
+        if (aFecha(fecha.value) > hoy()) return errorEn(fecha, 'La pesada no puede ser en el futuro');
+        if (!peso.value || isNaN(kilos) || kilos <= 0 || kilos > 2000) return errorEn(peso, 'Escribe un peso entre 1 y 2000 kg');
+        animal.pesajes.push({ fecha: fecha.value, peso: kilos });
+        avisar('Pesada registrada ⚖️');
+      }
+
+      if (e.target.id === 'form-salud') {
+        const enf = $('#s-enfermedad'), trat = $('#s-tratamiento');
+        if (!enf.value.trim()) return errorEn(enf, '¿Qué tiene el animal?');
+        if (!trat.value.trim()) return errorEn(trat, 'Anota el tratamiento');
+        animal.salud.push({ fecha: aISO(new Date()), enfermedad: enf.value.trim(), tratamiento: trat.value.trim() });
+        // CORRECCIÓN: antes este aviso salía en rojo como si fuera un error
+        avisar('Incidencia registrada 🩺');
+      }
+
+      guardarTodo();
+      renderTodo();
+      abrirPanelAnimal(animal.id);
+    });
+
+    // Marcar una enfermedad como curada
+    $('#contenido-modal').addEventListener('click', (e) => {
+      const b = e.target.closest('[data-sano]');
+      if (!b) return;
+      const animal = animales.find((a) => a.id === idAnimalActivo);
+      if (!animal) return;
+      animal.salud.splice(Number(b.dataset.sano), 1);
+      guardarTodo();
+      renderTodo();
+      abrirPanelAnimal(animal.id);
+      avisar('💚 Marcado como sano');
+    });
+
+    /* =========================================================
+       PARTOS
+       ========================================================= */
+    let ultimoCalculo = null;
+
+    function llenarSelectVacas() {
+      const select = $('#p-animal'), elegido = select.value;
+      const hembras = animales.filter((a) => a.sexo === 'hembra' && a.estado !== 'cria');
+      select.innerHTML = '<option value="">— Sin seleccionar —</option>' +
+        hembras.map((a) => `<option value="${a.id}">${esc(a.nombre)} (${esc(a.arete)})</option>`).join('');
+      if (hembras.some((a) => a.id === elegido)) select.value = elegido;
+    }
+
+    $('#form-parto').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const campoFecha = $('#p-fecha');
+      if (!campoFecha.value) return errorEn(campoFecha, 'Elige la fecha de monta o inseminación 📅');
+      const monta = aFecha(campoFecha.value);
+      // CORRECCIÓN: se podía poner una monta en el futuro
+      if (monta > hoy()) return errorEn(campoFecha, 'La fecha de monta no puede ser en el futuro');
+
+      const parto = sumarDias(monta, DIAS_GESTACION);
+      const faltan = diasEntre(hoy(), parto);
+      const gestados = diasEntre(monta, hoy());
+      const avance = Math.min(100, Math.max(0, Math.round((gestados / DIAS_GESTACION) * 100)));
+
+      ultimoCalculo = { monta: campoFecha.value, parto: aISO(parto), animalId: $('#p-animal').value || null };
+      $('#r-fecha').textContent = fechaLarga(ultimoCalculo.parto);
+      // CORRECCIÓN: si la fecha ya pasó decía "¡Es hoy!"
+      $('#r-dias').textContent = faltan > 0 ? `⏳ Faltan ${faltan} días` : faltan === 0 ? '🎉 ¡Es hoy! Prepárate' : `✅ Debió parir hace ${Math.abs(faltan)} días`;
+      $('#r-progreso').textContent = `Gestación: ${Math.min(gestados, DIAS_GESTACION)} de ${DIAS_GESTACION} días (${avance}%)`;
+      $('#resultado-parto').classList.remove('hidden');
+      $('#resultado-parto').classList.remove('cambia'); void $('#resultado-parto').offsetWidth; $('#resultado-parto').classList.add('cambia');
+      // ANIMACIÓN: la barra se llena desde cero
+      $('#r-barra').style.width = '0';
+      requestAnimationFrame(() => requestAnimationFrame(() => { $('#r-barra').style.width = avance + '%'; }));
+    });
+
+    $('#btn-guardar-parto').addEventListener('click', () => {
+      if (!ultimoCalculo) return;
+      const animal = animales.find((a) => a.id === ultimoCalculo.animalId);
+      // CORRECCIÓN: se podía guardar el mismo parto muchas veces
+      if (animal && partos.some((p) => p.animalId === animal.id)) return avisar(`${animal.nombre} ya tiene un parto guardado`, 'error');
+      partos.push({ id: nuevoId(), animalId: animal ? animal.id : null, nombre: animal ? animal.nombre : 'Vaca sin nombre', monta: ultimoCalculo.monta, parto: ultimoCalculo.parto });
+      if (animal) animal.estado = 'gestante';
+      guardarTodo();
+      renderTodo();
+      avisar('📌 Parto guardado en el calendario');
+      $('#resultado-parto').classList.add('hidden');
+      $('#form-parto').reset();
+      ultimoCalculo = null;
+    });
+
+    // CORRECCIÓN: los partos no se podían borrar
+    $('#lista-partos').addEventListener('click', (e) => {
+      const b = e.target.closest('[data-borrar-parto]');
+      if (!b) return;
+      partos = partos.filter((p) => p.id !== b.dataset.borrarParto);
+      guardarTodo();
+      renderTodo();
+      avisar('Parto quitado del calendario');
+    });
+
+    function renderPartos() {
+      llenarSelectVacas();
+      const cont = $('#lista-partos');
+      if (partos.length === 0) {
+        cont.innerHTML = `<div class="rounded-2xl border-2 border-dashed border-tierra/20 p-8 text-center text-tierra dark:text-trigo/60"><p class="flota inline-block text-4xl">🍼</p><p class="mt-2">Sin partos guardados.<br>Calcula uno y guárdalo aquí.</p></div>`;
+        return;
+      }
+      cont.innerHTML = [...partos].sort((a, b) => aFecha(a.parto) - aFecha(b.parto)).map((p, i) => {
+        const faltan = diasEntre(hoy(), aFecha(p.parto));
+        const urgente = faltan >= 0 && faltan <= 15;
+        // CORRECCIÓN: antes mostraba días negativos como "-12d"
+        const etiqueta = faltan > 0 ? `${faltan}<br>días` : faltan === 0 ? '¡Hoy!' : 'Ya<br>pasó';
+        const color = urgente ? 'bg-atardecer text-white' : faltan < 0 ? 'bg-tierra/15 text-tierra dark:bg-white/10 dark:text-trigo/70' : 'bg-brote/20 text-pradera dark:text-brote';
+        return `
+          <div class="entra flex items-center gap-4 rounded-2xl bg-trigo p-4 shadow-sm dark:bg-noche" style="--d:${i * 60}ms">
+            <div class="grid h-14 w-14 shrink-0 place-items-center rounded-2xl text-center text-xs font-extrabold leading-tight ${color} ${urgente ? 'animate-pulse' : ''}">${etiqueta}</div>
+            <div class="min-w-0 flex-1">
+              <p class="truncate font-bold text-pradera dark:text-trigo">${esc(p.nombre)} ${urgente ? '⏰' : ''}</p>
+              <p class="text-sm text-tierra dark:text-trigo/60">Parto: <strong>${fechaLarga(p.parto)}</strong></p>
+              <p class="text-xs text-tierra/70 dark:text-trigo/40">Monta: ${fechaLarga(p.monta)}</p>
+            </div>
+            <button type="button" data-borrar-parto="${p.id}" class="grid h-9 w-9 shrink-0 place-items-center rounded-xl text-tierra/50 transition hover:bg-red-50 hover:text-red-600 dark:hover:bg-red-500/10" aria-label="Quitar parto de ${esc(p.nombre)}">✕</button>
+          </div>`;
+      }).join('');
+    }
+
+    /* =========================================================
+       CUENTAS
+       ========================================================= */
+    $('#m-fecha').value = aISO(new Date());
+    $('#form-mov').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const concepto = $('#m-concepto'), monto = $('#m-monto'), fecha = $('#m-fecha');
+      const tipo = e.target.querySelector('input[name="tipo"]:checked').value;
+      const cantidad = Number(monto.value);
+      // CORRECCIÓN: antes todos los errores decían "Revisa los datos" y marcaban el monto aunque faltara el concepto
+      if (!concepto.value.trim()) return errorEn(concepto, '¿De qué fue? Escribe el concepto');
+      if (monto.value === '' || isNaN(cantidad)) return errorEn(monto, 'Escribe cuánto dinero fue');
+      if (cantidad <= 0) return errorEn(monto, 'El monto debe ser mayor a cero (sin signo de menos)');
+      if (!fecha.value) return errorEn(fecha, 'Elige la fecha');
+
+      movimientos.push({ id: nuevoId(), tipo, concepto: concepto.value.trim(), monto: Math.round(cantidad * 100) / 100, fecha: fecha.value });
+      guardarTodo();
+      concepto.value = '';
+      monto.value = '';
+      renderTodo();
+      avisar(tipo === 'ingreso' ? '⬆️ ¡Venta registrada!' : '⬇️ Gasto registrado');
+      concepto.focus();
+    });
+
+    $('#lista-movs').addEventListener('click', (e) => {
+      if (e.target.closest('[data-ejemplo]')) return cargarEjemplo();
+      const b = e.target.closest('[data-borrar-mov]');
+      if (!b) return;
+      movimientos = movimientos.filter((m) => m.id !== b.dataset.borrarMov);
+      guardarTodo();
+      renderTodo();
+      avisar('Movimiento eliminado');
+    });
+
+    const totales = () => {
+      const ingresos = movimientos.filter((m) => m.tipo === 'ingreso').reduce((s, m) => s + m.monto, 0);
+      const gastos = movimientos.filter((m) => m.tipo === 'gasto').reduce((s, m) => s + m.monto, 0);
+      return { ingresos, gastos, balance: ingresos - gastos };
+    };
+
+    function renderCuentas() {
+      const { ingresos, gastos, balance } = totales();
+      contar($('#tot-ingresos'), ingresos, pesos);
+      contar($('#tot-gastos'), gastos, pesos);
+      contar($('#tot-balance'), balance, pesos);
+
+      const tarjeta = $('#card-balance');
+      tarjeta.classList.remove('bg-pradera', 'bg-red-600', 'bg-tierra');
+      // CORRECCIÓN: sin movimientos decía "El rancho está ganando" con $0.00
+      if (movimientos.length === 0) { tarjeta.classList.add('bg-tierra'); $('#msg-balance').textContent = 'Registra tu primer movimiento'; }
+      else if (balance >= 0) { tarjeta.classList.add('bg-pradera'); $('#msg-balance').textContent = '👍 El rancho está ganando'; }
+      else { tarjeta.classList.add('bg-red-600'); $('#msg-balance').textContent = '⚠️ Salen más gastos que ventas'; }
+
+      // CORRECCIÓN: se ordenaba por orden de captura, no por fecha; y no se podían borrar
+      const lista = [...movimientos].sort((a, b) => aFecha(b.fecha) - aFecha(a.fecha)).slice(0, 10);
+      $('#lista-movs').innerHTML = lista.length === 0
+        ? `<div class="py-4 text-center"><p class="text-tierra dark:text-trigo/60">Sin movimientos todavía.</p><button type="button" data-ejemplo class="btn-fantasma mt-4 !py-2.5">✨ Cargar ejemplo</button></div>`
+        : lista.map((m, i) => `
+          <div class="entra flex items-center gap-3 rounded-2xl bg-trigo px-4 py-3 shadow-sm dark:bg-noche" style="--d:${i * 50}ms">
+            <span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl ${m.tipo === 'ingreso' ? 'bg-brote/20' : 'bg-red-100 dark:bg-red-500/15'}">${m.tipo === 'ingreso' ? '⬆️' : '⬇️'}</span>
+            <div class="min-w-0 flex-1"><p class="truncate font-semibold">${esc(m.concepto)}</p><p class="text-xs text-tierra/70 dark:text-trigo/50">${fechaLarga(m.fecha)}</p></div>
+            <p class="shrink-0 font-display font-extrabold ${m.tipo === 'ingreso' ? 'text-brote-700 dark:text-brote' : 'text-red-600 dark:text-red-400'}">${m.tipo === 'ingreso' ? '+' : '−'}${pesos(m.monto)}</p>
+            <button type="button" data-borrar-mov="${m.id}" class="grid h-9 w-9 shrink-0 place-items-center rounded-lg text-tierra/50 transition hover:bg-red-50 hover:text-red-600 dark:hover:bg-red-500/10" aria-label="Eliminar ${esc(m.concepto)}">✕</button>
+          </div>`).join('');
+    }
+
+    /* =========================================================
+       RANCHO DE EJEMPLO (para presentar)
+       ========================================================= */
+    function cargarEjemplo() {
+      // CORRECCIÓN: antes borraba lo que el usuario ya había capturado sin preguntar
+      if ((animales.length || movimientos.length) && !confirm('Esto reemplaza tus datos actuales por un rancho de ejemplo. ¿Continuar?')) return;
+      const hace = (d) => aISO(sumarDias(hoy(), -d));
+      const pinta = { id: nuevoId(), arete: 'MX-001', nombre: 'La Pinta', sexo: 'hembra', raza: 'Suizo', estado: 'gestante', madre: 'La Abuela', pesajes: [{ fecha: hace(60), peso: 455 }, { fecha: hace(5), peso: 480 }], salud: [] };
+      animales = [
+        pinta,
+        { id: nuevoId(), arete: 'MX-002', nombre: 'Dulce', sexo: 'hembra', raza: 'Suizo', estado: 'cria', madre: 'La Pinta', pesajes: [{ fecha: hace(40), peso: 105 }, { fecha: hace(12), peso: 130 }], salud: [] },
+        { id: nuevoId(), arete: 'MX-003', nombre: 'El Rayo', sexo: 'macho', raza: 'Charolais', estado: 'engorda', madre: 'Desconocida', pesajes: [{ fecha: hace(90), peso: 320 }, { fecha: hace(60), peso: 362 }, { fecha: hace(30), peso: 401 }, { fecha: hace(2), peso: 438 }], salud: [{ fecha: hace(45), enfermedad: 'Cojera leve', tratamiento: 'Revisión de pezuña y reposo' }] },
+        { id: nuevoId(), arete: 'MX-004', nombre: 'Canela', sexo: 'hembra', raza: 'Holstein', estado: 'ordena', madre: 'Sin registrar', pesajes: [{ fecha: hace(20), peso: 520 }], salud: [] }
+      ];
+      partos = [{ id: nuevoId(), animalId: pinta.id, nombre: pinta.nombre, monta: hace(270), parto: aISO(sumarDias(aFecha(hace(270)), DIAS_GESTACION)) }];
+      movimientos = [
+        { id: nuevoId(), tipo: 'ingreso', concepto: 'Venta de queso', monto: 3500, fecha: hace(2) },
+        { id: nuevoId(), tipo: 'ingreso', concepto: 'Venta de leche', monto: 2800, fecha: hace(6) },
+        { id: nuevoId(), tipo: 'gasto', concepto: 'Alimento / Forraje de engorda', monto: 3500, fecha: hace(8) },
+        { id: nuevoId(), tipo: 'gasto', concepto: 'Veterinario y Medicinas', monto: 900, fecha: hace(10) },
+        { id: nuevoId(), tipo: 'ingreso', concepto: 'Venta de ganado gordo', monto: 18000, fecha: hace(20) }
+      ];
+      guardarTodo();
+      renderTodo();
+      avisar('✨ Rancho de ejemplo cargado');
+    }
+
+    /* =========================================================
+       CELULAR DEL INICIO (datos reales)
+       ========================================================= */
+    function renderHero() {
+      contar($('#hero-total'), animales.length);
+      const engorda = animales.filter((a) => a.estado === 'engorda');
+      $('#hero-engorda').textContent = `${engorda.length} ${engorda.length === 1 ? 'animal' : 'animales'}`;
+      // CORRECCIÓN: "Ganancia prom." se quedaba siempre en "-- kg/sem"
+      const ganancias = engorda.map(gananciaSemanal).filter((g) => g !== null);
+      $('#hero-ganancia').textContent = ganancias.length
+        ? `+${(ganancias.reduce((s, g) => s + g, 0) / ganancias.length).toFixed(1)} kg/sem`
+        : '-- kg/sem';
+    }
+
+    function renderTodo() {
+      renderCorral();
+      renderPartos();
+      renderCuentas();
+      renderHero();
+    }
+
+    /* =========================================================
+       CONTACTO
+       ========================================================= */
+    $('#form-contacto').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const nombre = $('#c-nombre'), tel = $('#c-tel'), msg = $('#c-msg');
+      const digitos = tel.value.replace(/\D/g, '');
+      // CORRECCIÓN: si faltaba el nombre, marcaba el teléfono; y el mensaje no se validaba
+      if (!nombre.value.trim()) return errorEn(nombre, '¿Cómo te llamas?');
+      if (digitos.length !== 10) return errorEn(tel, 'El teléfono debe tener 10 dígitos');
+      if (msg.value.trim().length < 5) return errorEn(msg, 'Cuéntanos un poquito más en tu mensaje');
+      const exito = $('#exito-contacto');
+      exito.textContent = `¡Gracias, ${nombre.value.trim().split(' ')[0]}! 🤠 Te llamaremos pronto al ${digitos.slice(0, 3)} ${digitos.slice(3, 6)} ${digitos.slice(6)}.`;
+      exito.classList.remove('hidden', 'cambia'); void exito.offsetWidth; exito.classList.add('cambia');
+      e.target.reset();
+      avisar('✉️ Mensaje enviado');
+      setTimeout(() => exito.classList.add('hidden'), 8000);
+    });
+
+    /* =========================================================
+       SIMULADOR EN EL CELULAR
+       ========================================================= */
+    (() => {
+      const DURACION = 6000;                 // ms por paso
+      const pasos = $$('.sim-paso');
+      const pantallas = $$('.sim-pantalla');
+      const tabs = $$('.sim-tab');
+      const lista = $('#sim-pasos');
+      const btnPlay = $('#sim-play');
+      const menosMovimiento = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      let actual = 0, reproduciendo = !menosMovimiento, visible = false, timers = [], gen = 0;
+
+      const despues = (ms, fn) => timers.push(setTimeout(fn, menosMovimiento ? 0 : ms));
+      const limpiar = () => { timers.forEach(clearTimeout); timers = []; gen++; };
+
+      // Escribe un texto letra por letra en un elemento
+      function escribir(el, texto, inicio, campo) {
+        el.textContent = '';
+        [...texto].forEach((letra, i) => despues(inicio + i * 70, () => {
+          el.textContent += letra;
+          $$('.sim-cursor').forEach((c) => c.classList.toggle('activo', c.dataset.campo === campo));
+        }));
+        return inicio + texto.length * 70;
+      }
+
+      // Cuenta un número de "desde" a "hasta"
+      function contarSim(el, hasta, inicio, prefijo = '') {
+        despues(inicio, () => {
+          const g = gen;
+          const t0 = performance.now(), dur = 900;
+          const paso = (t) => {
+            const p = Math.min(1, (t - t0) / dur);
+            el.textContent = prefijo + Math.round(hasta * (1 - Math.pow(1 - p, 3))).toLocaleString('es-MX');
+            if (p < 1 && g === gen) requestAnimationFrame(paso);
+          };
+          requestAnimationFrame(paso);
+        });
+      }
+
+      // Lo que pasa dentro de cada pantalla
+      const ESCENAS = [
+        (pan) => {
+          let t = escribir($('#sim-arete'), 'MX-010', 300, 'arete');
+          t = escribir($('#sim-nombre'), 'La Güera', t + 250, 'nombre');
+          t = escribir($('#sim-raza'), 'Suizo', t + 250, 'raza');
+          despues(t + 400, () => { $$('.sim-cursor').forEach((c) => c.classList.remove('activo')); $('#sim-btn').classList.add('presionado'); });
+          despues(t + 650, () => $('#sim-btn').classList.remove('presionado'));
+          pan.querySelectorAll('.sim-item').forEach((el, i) => despues(t + 800 + i * 400, () => el.classList.add('ver')));
+        },
+        (pan) => {
+          pan.querySelectorAll('.sim-columna').forEach((c, i) => despues(300 + i * 450, () => c.classList.add('ver')));
+          pan.querySelectorAll('.sim-item').forEach((el, i) => despues(2300 + i * 600, () => el.classList.add('ver')));
+          despues(3100, () => pan.querySelector('.sim-meta').classList.add('ver'));
+        },
+        (pan) => {
+          const dias = $('#sim-dias'); dias.textContent = '30';
+          despues(300, () => pan.querySelector('.sim-meta2').classList.add('ver'));
+          // los días bajan de 30 a 12
+          for (let d = 29; d >= 12; d--) despues(300 + (30 - d) * 55, () => { dias.textContent = d; });
+          despues(1700, () => $('#sim-noti').classList.add('ver'));
+          despues(4300, () => $('#sim-noti').classList.remove('ver'));
+          pan.querySelectorAll('.sim-item').forEach((el, i) => despues(1900 + i * 450, () => el.classList.add('ver')));
+        },
+        (pan) => {
+          $('#sim-balance').textContent = '$0';
+          pan.querySelectorAll('.sim-item').forEach((el, i) => despues(400 + i * 500, () => el.classList.add('ver')));
+          contarSim($('#sim-balance'), 9100, 2800, '$');
+        }
+      ];
+
+      function irA(n) {
+        limpiar();
+        actual = (n + pasos.length) % pasos.length;
+        pasos.forEach((p, i) => { p.classList.toggle('activo', i === actual); p.setAttribute('aria-current', i === actual ? 'step' : 'false'); });
+        tabs.forEach((t, i) => t.classList.toggle('activo', i === actual));
+        pantallas.forEach((pan, i) => {
+          pan.classList.toggle('activa', i === actual);
+          // reinicia la pantalla para que se vuelva a animar
+          pan.querySelectorAll('.ver').forEach((el) => el.classList.remove('ver'));
+        });
+        $('#sim-noti').classList.remove('ver');
+        // reinicia la barrita de progreso del paso
+        const barra = pasos[actual].querySelector('.sim-barra');
+        barra.style.animation = 'none'; void barra.offsetWidth; barra.style.animation = '';
+        ESCENAS[actual](pantallas[actual]);
+        if (reproduciendo && visible) despues(DURACION, () => irA(actual + 1));
+      }
+
+      function actualizarPlay() {
+        lista.classList.toggle('pausado', !reproduciendo);
+        btnPlay.textContent = reproduciendo ? '⏸ Pausar' : '▶ Reproducir';
+        btnPlay.setAttribute('aria-label', reproduciendo ? 'Pausar simulador' : 'Reproducir simulador');
+      }
+
+      pasos.forEach((p) => p.addEventListener('click', () => irA(Number(p.dataset.paso))));
+      btnPlay.addEventListener('click', () => { reproduciendo = !reproduciendo; actualizarPlay(); irA(actual); });
+
+      // Solo se reproduce cuando el celular está a la vista (ahorra batería)
+      if ('IntersectionObserver' in window) {
+        new IntersectionObserver(([en]) => {
+          const antes = visible; visible = en.isIntersecting;
+          if (visible && !antes) irA(actual); else if (!visible) limpiar();
+        }, { threshold: 0.35 }).observe($('#simulador'));
+      } else { visible = true; }
+      actualizarPlay();
+      irA(0);
+    })();
+
+    /* =========================================================
+       LA GANADERÍA EN TU ESTADO
+       ========================================================= */
+    // Apoyos que aplican en todo el país
+    const APOYOS_NACIONALES = [
+      ['🌱', 'Cosechando Soberanía (SADER)', 'Asistencia técnica, crédito y apoyo para vender sin intermediarios a pequeños y medianos productores.'],
+      ['🏷️', 'Arete SINIIGA', 'Identificación oficial de cada animal. Sin arete no puedes moverlo ni venderlo formalmente.'],
+      ['🩺', 'Campañas de Senasica', 'Vacunación y control de tuberculosis, brucelosis, garrapata y gusano barrenador.'],
+      ['🤝', 'Tu asociación ganadera local', 'Te ayuda con guías de movilización, trámites y compras en grupo más baratas.']
+    ];
+
+    const ESTADOS_MX = {
+      michoacan: {
+        nombre: 'Michoacán', region: 'occidente', clima: 'Templado en la meseta y muy caluroso en Tierra Caliente y la costa.',
+        ganaderia: 'Ganado de doble propósito (leche y carne) y mucha producción de queso artesanal.',
+        retos: ['Sequías que acaban con la pastura en secas', 'Robo de ganado (abigeato)', 'Intermediarios que pagan poco por la leche y el becerro'],
+        apoyo: 'Pregunta en la Secretaría de Desarrollo Rural del estado por los programas ganaderos de este año.',
+        mejoras: ['Convertir la leche en queso para ganar más por litro', 'Guardar ensilado en lluvias para las secas', 'Organizarse en grupo para vender directo']
+      },
+      jalisco: {
+        nombre: 'Jalisco', region: 'occidente', clima: 'Templado y semiseco en Los Altos; cálido en la costa.',
+        ganaderia: 'Uno de los estados más fuertes en leche y carne del país, sobre todo en Los Altos.',
+        retos: ['Precio de la leche que no alcanza para los costos', 'Alimento (grano y forraje) cada vez más caro', 'Pozos y agua que escasean'],
+        apoyo: 'Hay programas estatales de mejoramiento genético y equipamiento: revisa la convocatoria de la Secretaría de Agricultura de Jalisco.',
+        mejoras: ['Llevar el costo de cada litro producido', 'Mejorar la genética poco a poco con buenos sementales', 'Captar agua de lluvia en bordos']
+      },
+      veracruz: {
+        nombre: 'Veracruz', region: 'golfo', clima: 'Trópico cálido y húmedo, con lluvias fuertes y huracanes.',
+        ganaderia: 'Uno de los mayores hatos de bovinos del país, con ganado de doble propósito en pastoreo.',
+        retos: ['Gusano barrenador (llegó en 2025)', 'Garrapata e inundaciones', 'Calor que baja la producción de leche'],
+        apoyo: 'Campaña contra el gusano barrenador con liberación de moscas estériles y revisión de heridas.',
+        mejoras: ['Revisar y curar heridas a diario', 'Rotar potreros para que el pasto descanse', 'Sombra y agua fresca para el ganado']
+      },
+      chiapas: {
+        nombre: 'Chiapas', region: 'sureste', clima: 'Tropical, con mucha lluvia y zonas de montaña.',
+        ganaderia: 'Producción de becerros y ganado de doble propósito en pequeños ranchos.',
+        retos: ['Aquí se detectó el primer caso de gusano barrenador (2024)', 'Entrada de ganado sin control sanitario', 'Caminos difíciles para vender'],
+        apoyo: 'Es zona prioritaria de la campaña contra el gusano barrenador: reporta cualquier caso a Senasica.',
+        mejoras: ['Comprar ganado solo con arete y guía', 'Curar el ombligo de cada becerro', 'Vender en grupo para tener mejor precio']
+      },
+      chihuahua: {
+        nombre: 'Chihuahua', region: 'norte', clima: 'Seco y extremoso: mucho calor en verano y heladas en invierno.',
+        ganaderia: 'Cría de becerros de razas de carne, buena parte para exportar a Estados Unidos.',
+        retos: ['Sequías largas que secan los agostaderos', 'Frontera cerrada por el gusano barrenador', 'Becerros que se quedan sin vender'],
+        apoyo: 'En julio de 2026 EE.UU. anunció que Chihuahua seguiría a Sonora en la reapertura gradual, aún sin fecha.',
+        mejoras: ['No sobrecargar el agostadero con demasiados animales', 'Bordos y papalotes para guardar agua', 'Buscar compradores en el mercado nacional']
+      },
+      sonora: {
+        nombre: 'Sonora', region: 'noroeste', clima: 'Desértico, con calor extremo y muy poca lluvia.',
+        ganaderia: 'Cría de becerros para exportación y ganado de carne en agostadero.',
+        retos: ['Calor extremo y falta de agua', 'Frontera cerrada por la plaga', 'Costo de traer alimento de fuera'],
+        apoyo: 'EE.UU. anunció la reapertura gradual por Agua Prieta–Douglas a partir del 24 de agosto de 2026, con inspección de cada animal.',
+        mejoras: ['Tener todos los papeles y aretes al día para exportar', 'Sombra y agua en cada potrero', 'Registrar la salud de cada animal para las inspecciones']
+      },
+      laguna: {
+        nombre: 'Coahuila y Durango (La Laguna)', region: 'norte', clima: 'Semidesértico, caluroso y con poca lluvia.',
+        ganaderia: 'Una de las cuencas lecheras más grandes de México, con establos grandes y pequeños.',
+        retos: ['Agua subterránea cada vez más escasa', 'Los pequeños productores compiten con establos enormes', 'Forraje que necesita mucha agua'],
+        apoyo: 'Hay programas de tecnificación de riego para usar menos agua: pregunta en tu distrito de riego.',
+        mejoras: ['Usar forrajes que piden menos agua', 'Llevar registro de producción por vaca', 'Unirse a una cooperativa para vender la leche']
+      },
+      tamaulipas: {
+        nombre: 'Tamaulipas', region: 'noreste', clima: 'Cálido y semiseco, con sequías y algunos huracanes.',
+        ganaderia: 'Cría de becerros de carne, parte de ellos para exportación.',
+        retos: ['Sequías frecuentes', 'Frontera cerrada para el ganado en pie', 'Precio bajo del becerro en el mercado local'],
+        apoyo: 'Revisa con la Unión Ganadera Regional las campañas sanitarias y los requisitos para movilizar ganado.',
+        mejoras: ['Engordar en el rancho para vender carne, no solo becerro', 'Guardar pacas para la sequía', 'Pesar seguido para vender en el mejor momento']
+      },
+      guanajuato: {
+        nombre: 'Guanajuato', region: 'centro', clima: 'Templado y semiseco en El Bajío.',
+        ganaderia: 'Ganado lechero en establo y producción de forrajes.',
+        retos: ['Acuíferos sobreexplotados', 'Alimento caro', 'Precio de la leche que pagan las empresas'],
+        apoyo: 'Pregunta en la Secretaría de Desarrollo Agroalimentario del estado por apoyos a lecheros.',
+        mejoras: ['Hacer queso o yogurt para vender directo', 'Medir cuánto produce cada vaca y quedarte con las mejores', 'Cuidar el agua con riego eficiente']
+      },
+      tabasco: {
+        nombre: 'Tabasco', region: 'golfo', clima: 'Trópico muy húmedo, con inundaciones frecuentes.',
+        ganaderia: 'Engorda en pastoreo y ganado de doble propósito.',
+        retos: ['Inundaciones que dejan al ganado sin pasto', 'Plagas y garrapata', 'Gusano barrenador en la región sur-sureste'],
+        apoyo: 'Forma parte de la zona de vigilancia contra el gusano barrenador: reporta casos a Senasica.',
+        mejoras: ['Tener potreros en zonas altas para las inundaciones', 'Baños garrapaticidas con asesoría', 'Llevar el calendario de vacunas']
+      },
+      otro: {
+        nombre: 'Otro estado', region: null, clima: 'Cada región tiene su propio clima: el clima es el que manda en la pastura.',
+        ganaderia: 'En México hay ganadería en los 32 estados: de carne, de leche y de doble propósito.',
+        retos: ['Sequías y cambio en las lluvias', 'Costos de alimento y medicinas', 'Intermediarios y precios bajos'],
+        apoyo: 'Consulta los programas de tu Secretaría de Desarrollo Rural estatal y de SADER.',
+        mejoras: ['Llevar registros de cada animal', 'Guardar alimento para las secas', 'Organizarse para vender mejor']
+      }
+    };
+
+    // Llenar el selector de estados
+    $('#sel-estado').innerHTML = Object.entries(ESTADOS_MX).map(([k, e]) => `<option value="${k}">${e.nombre}</option>`).join('');
+    $('#sel-estado').value = 'michoacan';
+
+    function mostrarEstado(clave) {
+      const e = ESTADOS_MX[clave];
+      // Resaltar la región en el mini mapa
+      $$('#mapa-regiones .region').forEach((r) => r.classList.toggle('activa', r.dataset.region === e.region));
+      const nombreRegion = e.region ? $(`#mapa-regiones [data-region="${e.region}"]`).textContent : 'Todo el país';
+
+      $('#estado-ubicacion').innerHTML = `
+        <div class="cambia">
+          <p class="font-display text-2xl font-extrabold text-pradera dark:text-trigo">${e.nombre}</p>
+          <p class="text-sm font-semibold text-atardecer">Región: ${nombreRegion}</p>
+          <div class="mt-3 rounded-2xl bg-sky-100/70 p-3 dark:bg-sky-500/10"><p class="text-xs font-bold text-sky-700 dark:text-sky-300">☁️ CLIMA</p><p class="text-sm text-tierra dark:text-trigo/80">${e.clima}</p></div>
+          <div class="mt-2 rounded-2xl bg-brote/15 p-3"><p class="text-xs font-bold text-pradera dark:text-brote">🐄 GANADERÍA</p><p class="text-sm text-tierra dark:text-trigo/80">${e.ganaderia}</p></div>
+        </div>`;
+
+      const lista = (items, icono) => items.map((t) => `<li class="flex gap-2"><span>${icono}</span><span>${t}</span></li>`).join('');
+      $('#estado-info').innerHTML = `
+        <div class="entra card p-6" style="--d:0ms">
+          <h3 class="font-display text-xl font-extrabold text-pradera dark:text-trigo">⚠️ Problemáticas</h3>
+          <ul class="mt-3 space-y-2 text-tierra dark:text-trigo/80">${lista(e.retos, '•')}</ul>
+        </div>
+        <div class="entra card p-6" style="--d:100ms">
+          <h3 class="font-display text-xl font-extrabold text-pradera dark:text-trigo">💡 Cómo podemos mejorar</h3>
+          <ul class="mt-3 space-y-2 text-tierra dark:text-trigo/80">${lista(e.mejoras, '✓')}</ul>
+        </div>
+        <div class="entra card p-6 sm:col-span-2" style="--d:200ms">
+          <h3 class="font-display text-xl font-extrabold text-pradera dark:text-trigo">🤝 Apoyos y programas</h3>
+          <p class="mt-2 rounded-2xl bg-atardecer/10 p-3 text-sm font-semibold text-atardecer-700 dark:text-atardecer">📌 En ${e.nombre}: ${e.apoyo}</p>
+          <div class="mt-3 grid gap-3 sm:grid-cols-2">
+            ${APOYOS_NACIONALES.map(([ico, tit, txt]) => `<div class="rounded-2xl bg-trigo p-3 dark:bg-noche"><p class="font-bold text-pradera dark:text-trigo">${ico} ${tit}</p><p class="text-sm text-tierra dark:text-trigo/70">${txt}</p></div>`).join('')}
+          </div>
+        </div>
+        <div class="entra rounded-3xl bg-pradera p-6 text-trigo sm:col-span-2" style="--d:300ms">
+          <h3 class="font-display text-xl font-extrabold">📱 Así te ayuda Corral Digital</h3>
+          <p class="mt-1 text-trigo/85">Con el registro de cada animal, sus pesadas, su salud y tus cuentas, tienes los datos a la mano para pedir apoyos, pasar inspecciones y vender mejor.</p>
+          <a href="#app" data-ir-tab="corral" class="btn mt-4 bg-atardecer text-white hover:bg-atardecer-700">Empezar a registrar →</a>
+        </div>`;
+      // el botón nuevo también debe abrir la pestaña de corral
+      $('#estado-info [data-ir-tab]').addEventListener('click', () => mostrarTab('corral'));
+    }
+    $('#sel-estado').addEventListener('change', (e) => mostrarEstado(e.target.value));
+    mostrarEstado('michoacan');
+
+    /* =========================================================
+       WHATSAPP, AÑO Y ANIMACIONES DE APARICIÓN
+       ========================================================= */
+    $('#btn-whatsapp').href = 'https://wa.me/?text=' + encodeURIComponent('¡Mira esto! 🐄📱 Con Corral Digital podemos llevar el ganado, los pesos, la salud y las cuentas del rancho desde el celular. Es gratis: ' + location.href);
+    $('#anio').textContent = new Date().getFullYear();
+
+    if ('IntersectionObserver' in window) {
+      const obs = new IntersectionObserver((es) => es.forEach((en) => { if (en.isIntersecting) { en.target.classList.add('visible'); obs.unobserve(en.target); } }), { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+      $$('.reveal').forEach((el) => obs.observe(el));
+    } else {
+      $$('.reveal').forEach((el) => el.classList.add('visible'));
+    }
+
+    renderTodo();
+  </script>
+</body>
+</html>
